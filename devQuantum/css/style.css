@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../imgs/Backgroung.png');
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding: 30px 200px;
+    background-color: rgb(0, 0, 0, 0.9);
+    z-index: 100;
+}
+
+.header img {
+    width: 40%;
+    font-size: 250%;
+    color: #FFFFFF;
+}
+
+#header-left {
+    width: 30%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-right ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#header-right li > a {
+    text-decoration: none;
+    margin: 0px 40px;
+
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+.main-container {
+    background-color: rgb(0, 0, 0, 0.9);
+    height: 740px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#main-left {
+    padding-left: 200px;
+    color: #FFFFFF;
+    width: 40%;
+}
+
+#main-left h1 {
+    font-size: 400%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: -70px;
+    margin-bottom: 20px;
+}
+
+#main-left p {
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+
+#main-left a {
+    color: #FFFFFF;
+    background-color: red;
+    padding: 15px 40px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #5D0492, #2E004F);
+    /* background-image: linear-gradient(red, yellow); */
+    font-size: 180%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+span {
+    color: #5D0492;
+}
+
+#main-right {
+    width: 50%;
+}
+
+#main-right img {
+    width: 130%;
+    overflow: none;
+    opacity: 0.3;
+    margin-top: 200px;
+}
+
+.services {
+    background-color: #000000;
+    text-align: center;
+    padding: 60px 200px;
+}
+
+.services-up {
+    
+}
+
+#services-up h1 {
+    color: #FFFFFF;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 400%;
+    
+    text-transform: uppercase;
+
+}
+
+#underline {
+    color: #FFFFFF;
+    border-bottom:  5px solid #5D0492;
+}
+
+#row {
+    display: flex;
+    margin: 40px 0px;
+}
+
+#card {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0px 20px;
+    padding: 30px 30px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+#card img {
+    height: 110px;
+}
+
+#card h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+
+    margin: 20px 0px;
+    padding: 0px 35px
+}
+
+#card p {
+    color: #FFFFFF;
+
+    font-size: 140%;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+#card a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 150%;
+    text-align: left;
+    
+    margin: 0px 0px;
+    padding: 10px 5px;
+    padding-left: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+
+    transition-property: color, background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.1s;
+}
+
+#card i {
+    width: 20px;
+    height: 20px;
+    text-align: right;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+#card-button {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#card a:hover {
+    background-color: #FFFFFF;
+    color:#000000;
+}
+
+.card-v1, .card-v1 > h1, .card-v1 i {
+    background-image: url('../imgs/bg1.png');
+    background-size: 120%;
+    background-position: -40px 230px;
+    background-repeat: no-repeat;
+
+    color: #5D0492;
+    
+    transition-property: background-position;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.1s;
+}
+
+.card-v2, .card-v2 > h1, .card-v2 i {
+    background-image: url('../imgs/bg2.png');
+    background-size: 150%;
+    background-position: -30px 230px;
+    background-repeat: no-repeat;
+
+    color: #0C44A1;
+
+    transition-property: background-position;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.1s;
+}
+
+.card-v1:hover, .card-v2:hover  {
+    background-position: -85px 230px;
+}
