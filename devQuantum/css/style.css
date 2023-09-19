@@ -132,7 +132,7 @@ span {
     text-align: center;
     padding: 60px 200px;
 
-    background-image: url('/imgs/ourServicesBG.png');
+    background-image: url('../imgs/ourServicesBG.png');
 }
 
 #services-up h1 {
@@ -336,12 +336,32 @@ span {
     margin: auto;
 }
 
+#testimonials-up {
+    
+}
+
+#testimonials-up h1 {
+    color: #FFFFFF;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 400%;
+    
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+#testimonials-up #underline {
+    border-bottom: 8px solid #FFFFFF;
+}
+
 #testimonials-card {
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255, 1);
     padding: 70px 50px;
     width: 35%;
     border-radius: 25px;    
     padding-top: 30px;
+
+    box-shadow: 1px 2px 20px rgb(0, 0, 0, 0.5);
 }
 
 .testimonials > #row {
@@ -349,15 +369,16 @@ span {
     
     align-items: center;
     justify-content: space-between;
+    text-align: left;
 }
 
 .testimonials #left-button {
     transform: scale(-1, 1);
-    width: 50%;
+    width: 100%;
 }
 
 .testimonials #right-button {
-    width: 50%;
+    width: 100%;
 }
 
 #testimonials-profile-ico img {
@@ -366,6 +387,7 @@ span {
 
 #rating-stars {
     color: #5D0492;
+    margin-left: 20px;
 }
 
 #rating-stars > i {
@@ -374,8 +396,7 @@ span {
 
 #rating-stars h1 {
     color: #000000;
-    font-size: 300%;
-    text-transform: uppercase;
+    font-size: 200%;
 
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -385,4 +406,26 @@ span {
     font-size: 140%;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.testimonials-center {
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials-left {
+    position: relative;
+    z-index: 1;
+    left: 400px;
+}
+
+.testimonials-right {
+    position: relative;
+    z-index: 1;
+    right: 400px;
+}
+
+.testimonials-show-r {
+    z-index: 3;
+    right: 500px;
 }
