@@ -335,7 +335,7 @@ span {
 
 .team {
     margin: auto;
-    background-image: url('/imgs/teamBG.png');
+    background-image: url('../imgs/teamBG.png');
     background-repeat: no-repeat;
 
     text-align: center;
