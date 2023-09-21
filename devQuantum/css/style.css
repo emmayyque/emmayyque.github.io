@@ -1136,6 +1136,10 @@ footer {
         border-bottom: 5px solid #FFFFFF;
     }
 
+    #testimonials-down {
+        align-items: center;
+    }
+
     #testimonials-down button {
         font-size: 20%;
     }
@@ -1183,7 +1187,7 @@ footer {
         text-align: justify;
         margin: 0;
         font-size: 80%;
-        padding: 0px 30px;
+        padding: 0px 20px;
     }
 
 
