@@ -714,9 +714,9 @@ footer {
     #services-down #row #card  {
         width: 80%;
         height: 280px;
-        padding: 30px 30px;
+        padding: 30px 20px;
         margin: 30px 10px;
-        background-position: -40px 135px;
+        background-position: -40px 130px;
     }
 
     #services-down #row #card img {
@@ -724,16 +724,16 @@ footer {
     }
 
     #services-down #row #card h1 {
-        font-size: 130%;
+        font-size: 120%;
         margin: 0px 0px;
-        line-height: 25px;
+        line-height: 20px;
         text-align: center;
         padding: 0px 20px;
     }
 
     #services-down #row #card p {
         font-size: 85%;
-        margin-top: 40px;
+        margin-top: 50px;
         margin-bottom: 0px;
     }
 
@@ -755,7 +755,7 @@ footer {
 
     #overlay {
         margin: auto;
-        padding: 20px 50px;
+        padding: 20px 100px;
     }
 
     #team-up h1 {        
@@ -795,10 +795,10 @@ footer {
     }
 
     .team #lm-button a {
-        font-size: 90%;
+        font-size: 100%;
     }
     .team #lm-button i {
-        font-size: 90%;
+        font-size: 100%;
     }
 
     /* Testimonials Styling */
@@ -905,7 +905,13 @@ footer {
     #footer-top-right ul li {
         margin: 0;
         text-align: right;
-        margin-right: 10px;
+        margin-left: 10px;
+        border-left: 2px solid #FFFFFF;
+        padding-left: 10px;
+    }
+
+    #footer-top-right ul li:first-child {
+        border-left: none;
     }
 
     #footer-top-right ul li a {
