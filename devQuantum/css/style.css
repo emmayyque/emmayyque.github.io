@@ -930,7 +930,7 @@ footer {
 }
 
 /* For Mobile View */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 425px) {
     #underline {
         border-bottom: 2px solid #5D0492;
     }
@@ -1083,15 +1083,18 @@ footer {
         padding: 0;
         margin: auto;
     }
-    #profile {
-        margin: auto;
-        width: 80%;
-        padding: 20px 30px;
-    }
+
     #team-down #row {
+        width: 100%;
         margin: auto;
+        align-items: center;
+        justify-content: center;
     }
 
+    #profile {
+        padding: 20px 10px;
+        margin: auto;
+    }
     #profile-ico {
         margin: auto;
         width: 200px;
@@ -1162,6 +1165,7 @@ footer {
     #rating-stars {
         width: 100%;
         margin: 10px 0px;
+        text-align: center;
         padding: 0;
     }
 
@@ -1195,10 +1199,10 @@ footer {
 
     #footer-top-left {
         margin-left: 10px;
+        display: block;
     }
 
     #footer-top-left i {
-        display: block;
         margin: 20px 0px;
         font-size: 100%;
     }
@@ -1211,6 +1215,7 @@ footer {
         margin: 0;
         text-align: right;
         margin-right: 10px;
+        border: none;
     }
 
     #footer-top-right ul li a {
