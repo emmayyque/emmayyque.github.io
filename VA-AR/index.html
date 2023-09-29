@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AR-Demo</title>
+        <meta charset="UTF-8" name="description" content="ar-demo">
+
+        <!-- Link to A-Frame & ar.js -->
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Link to ar.js -->
+        <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> -->
+    </head>
+    <body>
+        <a-scene arjs>
+            <!-- Back Wall -->
+            <a-box class="wall" position="0 2.5 -100" width="200" height="100" depth="0.1" material="src: url(imgs/wall-texture-01.jpg)"></a-box>
+            <!-- Left Wall -->
+            <a-box class="wall" position="-100 2.5 0" width="0.1" height="100" depth="200" material="src: url(imgs/wall-texture-01.jpg)"></a-box>
+            <!-- Right Wall -->
+            <a-box class="wall" position="100 2.5 0" width="0.1" height="100" depth="200" material="src: url(imgs/wall-texture-01.jpg)"></a-box>                    
+            <!-- Front Door Wall -->
+            <a-box class="wall" position="0 2.5 100" width="200" height="100" depth="0.1" material="src: url(imgs/wall-texture-01.jpg)"></a-box>
+            
+            <!-- Door goes here -->
+            <a-box class="wall" position="0 -7 99.8" width="15" height="25" depth="0.1" material="src: url(imgs/door.png)"></a-box>
+            <a-box class="wall" position="0 -7 100.1" width="15" height="25" depth="0.1" material="src: url(imgs/door.png)"></a-box>
+
+            <!-- Wall Art goes here -->
+            
+            <!-- Art 1: -->
+                <a-box position="50 0.5 -98.9" width="20" height="35" depth="0.1" material="src: url(imgs/art1.jpg)"></a-box>
+                <!-- Art 1 Frame -->
+                <a-box position="50 0.5 -99.9" width="23" height="38" depth="0.1" material="src: url(imgs/photo-frame-texture.jpg)"></a-box>
+                <!-- <a-text value="Hello, World!" position="0 5 -24.8" scale="10 10 10"></a-text> -->
+            
+            <!-- Art 2: -->
+            <a-box position="-20 0.5 -98.9" width="80" height="35" depth="0.1" material="src: url(imgs/art2.jpg)"></a-box>
+            <!-- Art 2 Frame -->
+            <a-box position="-20 0.5 -99.9" width="83" height="39" depth="0.1" material="src: url(imgs/photo-frame-texture.jpg)"></a-box>
+            <!-- <a-text value="Hello, World!" position="0 5 -24.8" scale="10 10 10"></a-text> -->
+
+
+            <!-- Floor goes here -->
+            <a-box id="floor" position="0 -47 0" width="200" height="0.1" depth="200" color="transparent" material="src: url(imgs/floor-texture-02.jpg)"></a-box>
+            <a-box id="floor" position="0 -45 0" width="50" height="5" depth="50" color="transparent" material="src: url(imgs/wall-texture-01.jpg)"></a-box>
+
+
+            <!-- Bench goes here -->
+            <a-box position="-30 -40 -80" width="10" height="10" depth="10" material="src: url(imgs/woodtexture3.jpg)"></a-box>
+            <a-box position="30 -40 -80" width="10" height="10" depth="10" material="src: url(imgs/woodtexture3.jpg)"></a-box>
+            <a-box position="0 -35 -80" width="100" height="2" depth="10" material="src: url(imgs/woodtexture3.jpg)"></a-box>
+
+            <!-- Roof goes here -->
+            <a-box id="floor" position="0 50 0" width="200" height="0.1" depth="200" color="transparent" material="src: url(imgs/wall-texture-01.jpg)"></a-box>
+            <a-box id="roof" position="0 47.1 0" width="83" height="3" depth="93" color="#000000"></a-box>
+            <a-box id="floor" position="0 47 0" width="80" height="3" depth="90" color="transparent" material="src: url(imgs/roof-texture.jpg)"></a-box>
+            
+            <!-- <a-material src="url(/imgs/floor-bg.jpg)"></a-material> -->
+            
+            <a-marker preset="hiro">
+                <!-- Content to display when marker is detected -->
+                <a-box position="0 0.5 -24.9" color="red"></a-box>
+            </a-marker>
+
+
+            <!-- Models goes here -->
+
+            <a-entity
+                obj-model="obj: url(assets/PictureFrame1/3d-model.obj);"
+                position="-98.0 0 0"
+                rotation="0 90 0"
+                scale="0.01 0.01 0.01"
+                material="src: url(imgs/woodtexture3.jpg)"
+            ></a-entity>
+            <!-- Art 3 -->
+            <a-box position="-97.4 15 0" width="35" height="22.3" depth="0.1" rotation="0 90 0" material="src: url(imgs/art2.jpg)"></a-box>
+
+            <!-- <a-entity
+                obj-model="obj: url(https://d2z6pp1b5cghw2.cloudfront.net/3f805b32-c95d-4109-b10f-308be54f718f/model.obj); mtl: url(https://d2z6pp1b5cghw2.cloudfront.net/3f805b32-c95d-4109-b10f-308be54f718f/model.mtl);"
+                scale="5 5 5"
+                position="0 -40 -2"
+                rotation="0 90 0"
+            ></a-entity> -->
+
+            <!-- <a-gltf-model src="url(assets/Human skeleton.glb)" scale="100 100 100" position="0 -40 -5"></a-gltf-model> -->
+            <a-gltf-model src="url(assets/Pillar.glb)" scale="5 7.9 5" position="-92 -47 -92"></a-gltf-model>
+
+            <!-- Hand Rails -->
+            <a-gltf-model src="url(assets/handrails.glb)" scale="0.1 0.1 0.1" position="0 -35 0" rotations="0 -40 0"></a-gltf-model>
+
+            <!-- LED Model -->
+            <a-gltf-model src="url(assets/mi-smart-tv.glb)" scale="30 30 30" position="82 -47 0" rotation="0 -90 0"></a-gltf-model>
+
+            <!-- Video here -->
+            <a-video src="url(assets/video1.mp4)" width="59.3" height="34.3" position="91 -24.7 0" rotation="0 -90 0" sound="on: false"></a-video>
+
+        </a-scene>
+    </body>
+</html>
