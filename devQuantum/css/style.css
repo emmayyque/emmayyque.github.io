@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Jost', sans-serif;
 }
 
 body {
@@ -70,7 +71,6 @@ header img {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 90%;
-    font-family: 'Poppins', sans-serif;
     margin: 0px 20px;
 }
 
@@ -102,7 +102,6 @@ nav ul li a {
     margin: 0px 35px;
 
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
     font-size: 110%;
     text-transform: uppercase;
     padding: 10px 0px;
@@ -138,7 +137,6 @@ nav ul li a:hover {
 #main-left {
     padding-left: 200px;
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
     width: 40%;
     margin: auto;
 }
@@ -204,7 +202,6 @@ span {
 
 .services {
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
     background-color: #000000;
     text-align: center;
     padding: 60px 200px;
@@ -343,13 +340,12 @@ span {
 
 .team {
     margin: auto;
-    /* background-image: url('../imgs/teamBG.png'); */
+    height: 600px;
     background-image: linear-gradient(to left, #001C44, #0C44A1);
     background-repeat: no-repeat;
 
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    padding: 50px 200px;
+    padding: 50px 150px;
     justify-items: center;
     justify-content: space-between;
 }
@@ -374,49 +370,68 @@ span {
     text-transform: uppercase;
 }
 
-#team-down h2 {
-    color: #FFFFFF;
-    margin-top: 20px;
-    font-size: 200%;
-    font-weight: 600;
-}
-
 #profile {
     padding: 40px 40px;
+    position: relative;
+    height: 300px;
+    width: 300px;
 }
 
-#profile > h2 {
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-    font-size: 200%;
-    text-transform: uppercase;
-    margin-top: 40px;
-}
-
-#profile-ico {
-    height: 350px;
-    width: 350px;
-    
-    border: 10px solid #FFFFFF;
-    border-radius: 50%;
-    text-align: center;
+#profile-top {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 5px solid #FFFFFF;
+    border-radius: 100%;
     overflow: hidden;
+    background-color: #FFFFFF;
+    z-index: 1;
 }
 
-#profile-ico img {
-    width: 350px;
+#profile-top img {
+    width: 100%;
+}
+
+#profile-bottom {
+    position: absolute;
+    color: #000000;
+    background-color: #FFFFFF;
+    width: 200px;
+    padding: 20px 5px;
+    border-radius: 100%;
+    z-index: 0;
+    opacity: 0;
     
-    transition-property: transform;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
-    transition-delay: 0.1s;
+    transition: .2s ease-in-out;
 }
 
-#profile-ico img:hover {
-    transform: scale(1.07);
+#profile-bottom h2 {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+#profile-bottom h2 span {
+    font-size: 1.0rem;
+}
+
+#profile-bottom p {
+    text-align: justify;
+    font-size: 0.8rem;
+    padding: 0px 10px;
+    margin: 5px 0px;
+}
+
+#profile-top:hover ~ #profile-bottom  {
+    opacity: 1;
+    border-radius: 5%;
+    padding-top: 120px;
+    transform: translateY(100px);
+
+    /* opacity: 1; */
 }
 
 .team #lm-button {
+    margin-top: 40px;
     text-align: right;
 }
 
@@ -457,8 +472,6 @@ span {
 
 #testimonials-up h1 {
     color: #FFFFFF;
-
-    font-family: 'Poppins', sans-serif;
     font-size: 400%;
     font-weight: 600;
     
@@ -507,15 +520,12 @@ span {
 #rating-stars h1 {
     color: #000000;
     font-size: 150%;
-
-    font-family: 'Poppins', sans-serif;
 }
 
 #review p {
     color: rgb(0, 0, 0, 0.5);
     font-size: 120%;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
     font-style: italic;
     text-align: center;
     margin-top: 20px;
@@ -600,7 +610,6 @@ footer {
     text-transform: uppercase;
 
     font-size: 120%;
-    font-family: 'Poppins', sans-serif;
     margin-left: 40px;
     padding: 5px 0px;
     padding-left: 40px;
@@ -622,7 +631,6 @@ footer {
 #footer-bottom {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
 
     margin-top: 20px;
     font-size: 90%;
@@ -655,7 +663,6 @@ footer {
 
 #portfolio-main-left {
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
     width: 80%;
     margin-top: -100px;
 }
@@ -698,7 +705,6 @@ footer {
     background-image: linear-gradient(to right, #2E004F, #5D0492);
 
     color:#FFFFFF;
-    font-family: 'Poppins', sans-serif;
     text-align: justify center;
 }
 
@@ -750,7 +756,6 @@ footer {
 #webDev-right {
     width: 60%;
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
 }
 
 #webDev-right h1{
@@ -819,8 +824,6 @@ footer {
 #graphDesign-left {
     width: 60%;
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-
 }
 
 #graphDesign-left h1 {
@@ -952,7 +955,6 @@ footer {
 #wpDev-right {
     width: 60%;
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
 }
 
 #wpDev-right h1{
@@ -1017,7 +1019,6 @@ footer {
 
 .oServices {
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
 
@@ -1057,7 +1058,6 @@ footer {
 
 .servInfo {
     padding: 45px 200px;
-    font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
 
     background-image: linear-gradient(to right top, #001C44, #0C44A1);
@@ -1195,10 +1195,903 @@ footer {
     opacity: 1;
 }
 
-/* Laptop View Styling goes here */
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1440px) {
     .active {
-        border-bottom: 2px solid #5D0492;
+        border-bottom: 3px solid #5D0492;
+    }
+
+    #underline {
+        border-bottom: 5px solid #FFFFFF;
+    }
+
+    header {
+        padding: 30px 200px;
+        background-color: rgb(0, 0, 0, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: none;
+    }
+    
+    header img {
+        width: 30%;
+        color: #FFFFFF;
+    }
+    
+    #header-left {
+        width: 30%;    
+    }
+
+    
+    nav ul li a {
+        margin: 0px 20px;
+        font-size: 1rem;
+    }
+    
+    .main-container {
+        height: 660px;
+    }
+    #main-left {
+        color: #FFFFFF;
+        width: 40%;
+        margin: auto;
+    }
+    
+    #main-left h1 {
+        font-size: 3.5rem;
+        line-height: 60px; 
+    }
+    
+    #main-left p {
+        font-size: 1.2rem;
+    }
+    
+    #main-left a {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: 3px solid #5D0492;
+    }
+    
+    #main-left a:hover {
+        background-color: #5D0492;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
+    }
+    
+    span {
+        color: #5D0492;
+    }
+    
+    #underline {
+        color: #FFFFFF;
+        border-bottom:  8px solid #FFFFFF;
+    }
+    
+    #main-right {
+        width: 50%;
+    }
+    
+    #main-right img {
+        width: 110%;
+        overflow: none;
+        opacity: 0.3;
+        margin-left: 150px;
+        margin-top: 340px;
+    }
+
+    .services {
+        padding: 60px 160px;
+    }
+
+    /* .services {
+        color: #FFFFFF;
+        background-color: #000000;
+        text-align: center;
+        padding: 60px 200px;
+        background-image: url('../imgs/ourServicesBG.png');
+    }
+    
+    #services-up #underline {
+        border-bottom:  8px solid #5D0492;
+    }
+    
+    
+    #services-up h1 {
+        color: #FFFFFF;
+        font-size: 400%;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    #services-up p {
+        color: #FFFFFF;
+        font-size: 150%;
+        font-weight: 300;
+        padding: 20px 0px;
+    } */
+    
+    #card {
+        margin: 0px 20px;
+        padding: 30px 30px;
+        height: 435px;
+    }
+    
+    #card img {
+        height: 80px;
+    }
+    
+    #card h1 {
+        width: 100%;
+        font-size: 1.8rem;
+        padding: 0;
+    }
+    
+    #card p {
+        font-size: 1.2rem;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .card-v1, .card-v1 > h1, .card-v1 i {
+        background-size: 155%;
+        background-position: -40px 200px;
+    }
+    
+    .card-v2, .card-v2 > h1, .card-v2 i {
+        background-size: 155%;
+        background-position: -30px 210px;
+    }
+    
+    .card-v1:hover, .card-v2:hover  {
+        background-position: -85px 220px;
+    }
+        
+    .team {
+        height: 530px;
+    }
+
+    #team-down #row {
+        margin-top: 70px;
+        justify-content: space-evenly;
+    }
+
+    #profile {
+        padding: 0px;
+        position: relative;
+        height: 160px;
+        width: 160px;
+    }
+    
+    #profile-top {
+        height: 160px;
+        width: 160px;
+    }
+    
+    #profile-top img {
+        width: 100%;
+    }
+    
+    #profile-bottom {
+        width: 160px;
+    }
+    
+    #profile-bottom h2 {
+        font-size: 1.1rem;
+        font-weight: 800;
+    }
+    
+    #profile-bottom h2 span {
+        font-size: 1.0rem;
+    }
+    
+    #profile-bottom p {
+        font-size: 0.8rem;
+        padding: 0px 10px;
+        margin: 5px 0px;
+    }
+    
+    #profile-top:hover ~ #profile-bottom  {
+        opacity: 1;
+        border-radius: 5%;
+        padding-top: 110px;
+        transform: translateY(80px);
+    }
+    
+    .team #lm-button {
+        margin-top: 180px;
+        text-align: right;
+    }
+    
+    .team #lm-button a {
+        font-size: 120%;
+    }
+    
+    
+    /* Testimonials Styling */
+    
+    .testimonials {
+        padding: 40px 200px;
+        background-image: linear-gradient(to right, #2E004F, #5D0492);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 600px;
+    }
+    
+    
+    #testimonials-up h1 {
+        color: #FFFFFF;
+        font-size: 400%;
+        font-weight: 600;
+        
+        text-transform: uppercase;
+        margin-bottom: 70px;
+    }
+    
+    #testimonials-down {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #testimonials-card {
+        background-color: rgb(255, 255, 255, 1);
+        padding: 50px 50px;
+        border-radius: 25px;
+        height: 300px;
+    }
+    
+    .testimonials #row {
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        margin: auto;
+    }
+    
+    #testimonials-profile-ico {
+        width: 30%;
+    }
+    #testimonials-profile-ico img {
+        width: 90%;
+    }
+    
+    #rating-stars {
+        width: 70%;
+        padding: 0px 20px;
+        color: #5D0492;
+    }
+    
+    #rating-stars > i {
+        font-size: 160%;
+        margin: 5px 3px;
+    }
+    
+    #rating-stars h1 {
+        color: #000000;
+        font-size: 150%;
+    }
+    
+    #review p {
+        color: rgb(0, 0, 0, 0.5);
+        font-size: 120%;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .slide-parent {
+        width: 34%;
+        height: 410px;    
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .slide {
+        margin: auto;
+        width: 80%;
+    
+        position: absolute;
+        transition: 0.5s;
+    }
+    
+    #testimonials-down button {
+        padding: 40px 40px;
+        background-color: transparent;
+        border: none;
+    }
+    
+    #testimonials-down button i {
+        text-align: center;
+        font-size: 1000%;
+        color: #FFFFFF;
+        margin: auto;
+    }
+    
+    /* Footer Styling */
+    footer {
+        padding: 30px 180px;
+    }
+    
+    #footer-top {
+        padding: 40px 0px;
+    }
+
+    #footer-top-left i {
+        font-size: 1.3rem;
+        margin: 0px 30px;
+    }
+    
+    #footer-top ul li a {  
+        font-size: 1rem;
+        margin-left: 20px;
+        padding: 5px 0px;
+        padding-left: 20px;
+    }
+    
+    
+    /* Portfolio Page Styling goes here */
+    
+    .portfolio span {
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    #row {
+        justify-content: space-between;
+    }
+    
+    .portfolio-main {
+        padding: 45px 200px;
+        display: flex;
+        background-color: rgb(0, 0, 0, 0.9);
+    
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    #portfolio-main-left {
+        color: #FFFFFF;
+        width: 80%;
+        margin-top: -100px;
+    }
+    
+    #portfolio-main-left h1 {
+        font-size: 600%;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    #portfolio-main-left p {
+        font-size: 150%;
+        font-weight: 400;
+        width: 70%;
+        
+    }
+    
+    #porfolio-main-right {
+        width: 20%;
+    }
+    
+    #round-pic-card {
+        width: 700px;
+        height: 700px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        margin-right: -400px;
+    }
+    
+    #round-pic-card img {
+        height: 700px;
+        margin-left: -180px;
+    }
+    
+    .work {
+        padding: 50px 300px;
+        text-align: center;
+        background-image: linear-gradient(to right, #2E004F, #5D0492);
+    
+        color:#FFFFFF;
+        text-align: justify center;
+    }
+    
+    .work h1 {
+        font-size: 400%;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    .work p {
+        font-size: 150%;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    
+    /* Web Designing & Development Styling goes here */
+    .webDev {
+        padding: 20px 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        background-image: linear-gradient(to left, #001C44, #0C44A1);
+    }
+    
+    #webDev-left{
+        width: 40%;
+    }
+    
+    #pic-cardLeft { 
+        width: 900px;
+        height: 900px;
+        background-color: #2E004F;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15%;
+        transform: rotate(45deg);
+        margin-left: -480px;
+        box-shadow: 15px -15px 40px rgb(0, 0, 0, 0.5);   
+    }
+    
+    #pic-cardLeft img { 
+        margin-top: 50px;
+        margin-left: -550px;
+        height: 1000px;
+        transform: rotate(-45deg);
+    }
+    
+    #webDev-right {
+        width: 60%;
+        color: #FFFFFF;
+    }
+    
+    #webDev-right h1{
+        width: 60%;
+        font-size: 400%;
+        font-weight: 600;
+        line-height: 70px;
+        text-transform: uppercase;
+    }
+    
+    #webDev-right p {
+        font-size: 150%;
+        font-weight: 300;
+        margin: 20px 0px;
+        text-align: justify;
+    }
+    
+    #webDev-right #pCard1 {
+        text-align: center;
+        display: block;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+        height: 300px;
+        width: 45%;
+        overflow: hidden;
+        box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
+    }
+    
+    #webDev-right #pCard1 img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    #webDev-right #pCard1 a {
+        text-decoration: none;
+        color: #0C44A1;
+        font-size: 110%;
+        font-weight: 800;
+        padding: 10px 30px; 
+        border-radius: 50px;
+        border: 3px solid #0C44A1;
+    
+        transition-property: color, background-color, box-shadow;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.1;
+        
+    }
+    
+    #webDev-right #pCard1 a:hover {
+        color: #FFFFFF;
+        background-color: #0C44A1;
+        box-shadow: 1px 0px 10px rgb(0, 0, 0, 0.5);
+    }
+    
+    
+    .graphDesign {
+        padding: 20px 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        background-image: linear-gradient(to right, #2E004F, #5D0492);
+    }
+    
+    #graphDesign-left {
+        width: 60%;
+        color: #FFFFFF;
+    }
+    
+    #graphDesign-left h1 {
+        font-size: 400%;
+        font-weight: 600;
+        text-transform: uppercase;
+    
+        width: 60%;
+        line-height: 70px;
+    }
+    
+    #graphDesign-left p {
+        font-size: 150%;
+        font-weight: 300;
+        text-align: justify;
+    
+        margin: 20px 0px;
+    }
+    
+    #graphDesign-left #row {
+        justify-content: space-between;
+    }
+    
+    #graphDesign-left #pCard1 {
+        text-align: center;
+        display: block;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+        height: 330px;
+        width: 30%;
+        overflow: hidden;
+        box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
+    }
+    
+    #graphDesign-left #pCard1Img {
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    #graphDesign-left #pCard1 img {
+        align-items: center;
+        width: 100%;
+    
+        transition: transform, 0.1s, ease-in, 0.7s;
+    }
+    
+    #graphDesign-left #pCard1 img:hover {
+        transform: scale(1.2);
+    }
+    
+    #graphDesign-left #pCard1 h2 {
+        color: #5D0492;
+        font-size: 150%;
+        text-transform: initial;
+        text-align: center;
+        margin: 0px auto;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    
+    #graphDesign-left #pCard1 a {
+        text-decoration: none;
+        color: #5D0492;
+        font-size: 90%;
+        font-weight: 800;
+        padding: 5px 20px; 
+        border-radius: 50px;
+        border: 3px solid #5D0492;
+    
+        transition-property: color, background-color, box-shadow;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.1;
+        
+    }
+    
+    #graphDesign-left #pCard1 a:hover {
+        color: #FFFFFF;
+        background-color: #5D0492;
+        box-shadow: 1px 0px 10px rgb(0, 0, 0, 0.5);
+    }
+    
+    
+    #graphDesign-right {
+        width: 40%;
+    }
+    
+    #pic-cardRight { 
+        width: 900px;
+        height: 900px;
+        background-color: #2E004F;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15%;
+        transform: rotate(45deg);
+        margin-left: 200px;
+        box-shadow: -15px 15px 40px rgb(0, 0, 0, 0.5);   
+    }
+    
+    #pic-cardRight img { 
+        margin-top: -5px;
+        margin-left: -280px;
+        height: 960px;
+        transform: rotate(-45deg);
+    }
+    
+    
+    /* Wordpress Development Styling goes here */
+    .wpDev {
+        padding: 20px 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        background-image: linear-gradient(to left, #001C44, #0C44A1);
+    }
+    
+    #wpDev-left{
+        width: 40%;
+        /* overflow: hidden; */
+    }
+    
+    #wpDev-left #pic-cardLeft img {
+        margin: 0;
+        margin-top: -180px;
+        margin-left: 180px;
+    }
+    
+    #wpDev-right {
+        width: 60%;
+        color: #FFFFFF;
+    }
+    
+    #wpDev-right h1{
+        width: 90%;
+        font-size: 400%;
+        font-weight: 600;
+        line-height: 70px;
+        text-transform: uppercase;
+    }
+    
+    #wpDev-right p {
+        font-size: 150%;
+        font-weight: 300;
+        margin: 20px 0px;
+        text-align: justify;
+        /* text-transform: uppercase; */
+    }
+    
+    #wpDev-right #pCard1 {
+        text-align: center;
+        display: block;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+        height: 300px;
+        width: 45%;
+        overflow: hidden;
+        box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
+    }
+    
+    #wpDev-right #pCard1 img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    #wpDev-right #pCard1 a {
+        text-decoration: none;
+        color: #0C44A1;
+        font-size: 110%;
+        font-weight: 800;
+        padding: 10px 30px; 
+        border-radius: 50px;
+        border: 3px solid #0C44A1;
+    
+        transition-property: color, background-color, box-shadow;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.1;
+        
+    }
+    
+    #wpDev-right #pCard1 a:hover {
+        color: #FFFFFF;
+        background-color: #0C44A1;
+        box-shadow: 1px 0px 10px rgb(0, 0, 0, 0.5);
+    }
+    
+    
+    /* Services Page Styling goes here */
+    .oServices #row {
+        
+    }
+    
+    .oServices {
+        color: #FFFFFF;
+        overflow: hidden;
+    }
+    
+    .oServices span {
+        font-weight: 800;
+    }
+    
+    .oServices-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 45px 200px;
+        background-color: rgb(0, 0, 0, 0.9);
+    }
+    
+    #oServices-main-left {
+        width: 80%;
+        margin-top: -100px
+    }
+    
+    #oServices-main-left h1 {
+        font-size: 600%;
+        font-weight: 600;
+        text-transform: uppercase;
+        
+    }
+    
+    #oServices-main-left p {
+        font-size: 150%;
+        width: 70%;
+    }
+    
+    
+    #oServices-main-right {
+        width: 20%;
+    }
+    
+    .servInfo {
+        padding: 45px 200px;
+        color: #FFFFFF;
+    
+        background-image: linear-gradient(to right top, #001C44, #0C44A1);
+    }
+    
+    #servicesCard {
+        /* text-align: center; */
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        width: 650px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #servicesCardIcoBG {
+        background-color: #5D0492;
+        border-radius: 0px 0px 1000px 0px;
+        height: 350px;
+        width: 550px;
+        margin-left: -150px;
+        margin-top: 0px;
+        position: absolute;
+    
+        transition-property: transform, width, margin-left, margin-top;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.1s;
+    }
+    
+    #servicesCard:hover > #servicesCardIcoBG {
+        transform: scale(0.5);
+        margin-top: -100px;
+        margin-left: -200px;
+    }
+    
+    #servicesCardIcoBG img {
+        width: 40%;
+        margin-left: 200px;
+        margin-top: 50px;
+        
+        transition-property: transform, width, margin-left, margin-top;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.1s;
+    }
+    
+    #servicesCard:hover > #servicesCardIcoBG > img {
+        transform: scale(0.7);
+        /* margin-left: 325px;
+        margin-top: 160px;    */
+    }
+    
+    #moreInfo {
+        opacity: 0;
+        text-align: center;
+        color:#5D0492;
+        /* text-align: right; */
+        margin-left: 200px;
+        margin-top: 50px;
+        width: 60%;
+    
+    
+        transition-property: opacity;
+        transition-duration: 0.1s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.1s;
+    }
+    
+    #moreInfo h1 {
+        text-align: left;
+        font-size: 200%;
+        width: 80%;
+        line-height: 35px;
+        text-transform: uppercase;
+    }
+    
+    #moreInfo p {
+        text-align: justify;
+        margin: 10px 0px;
+        margin-bottom: 30px;
+        font-size: 120%;
+    }
+    
+    #moreInfo a {
+        color: #5D0492;
+        padding: 5px 40px;
+        border: 3px solid #5D0492;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 120%;
+    
+        transition-property: color, background-color;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.1s;
+    }
+    
+    #moreInfo a:hover {
+        color: #FFFFFF;
+        background-color: #5D0492;
+    }
+    
+    
+    
+    #servicesCardHeading {
+        width: 60%;
+        color: #5D0492;
+        font-size: 250%;
+        text-align: right;
+        text-transform: uppercase;
+        line-height: 50px;
+        margin: auto;
+        position: absolute;
+        top: 280px;
+        left: 220px;
+    
+        opacity: 1;
+    
+        transition-property: display;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.1s;
+    }
+    
+    #servicesCard:hover #servicesCardHeading {
+        /* opacity: 0; */
+        display: none;
+    }
+    
+    #servicesCard:hover #moreInfo {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    .active {
+        border-bottom: 3px solid #5D0492;
     }
 
     #underline {
@@ -1222,7 +2115,7 @@ footer {
     }
 
     #header-left img{
-        width: 80%;
+        width: 100%;
     }
     
     nav ul li a {
@@ -1231,16 +2124,15 @@ footer {
     }
 
     .main-container {
-        width: 82.4%;
-        margin: auto;
-        padding: 0px 90px;
-        height: 450px;
-        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 0px;
+        height: 480px;
     }
     
     #main-left {
-        padding: 0;
-        margin: 0;
+        padding: 0px 30px;
         width: 50%;
     }
 
@@ -1263,19 +2155,18 @@ footer {
     }
 
     #main-right {
-        width: 50%;
-        margin-top: -200px;        
-        /* overflow: hidden; */
+        margin-top: -200px;
+        margin-left: -100px;
     }
 
     #main-right img {
         margin: 0;
-        margin-top: 380px;
-        width: 150%;
+        margin-top: 400px;
+        width: 130%;
     }
 
     .services {
-        padding: 20px 20px;
+        padding: 20px 0px;
         margin: 0;
         justify-content: space-evenly;
         background-size: cover;
@@ -1286,7 +2177,7 @@ footer {
     }
 
     #services-up h1 {
-        font-size: 250%;
+        font-size: 2.5rem;
     }
 
     #services-up p {
@@ -1329,18 +2220,17 @@ footer {
 
     #services-down #row #card h1 {
         width: 70%;
-        font-size: 110%;
+        font-size: 1.1rem;
         margin: auto;
         padding: 5px 10px;
-        
         line-height: 20px;
     }
 
     #services-down #row #card p {
         width: 100%;
         font-size: 75%;
-        margin-top: 55px;
-        margin-bottom: 5px;
+        margin-top: 60px;
+        margin-bottom: 0px;
     }
 
     #services-down #row #card a {
@@ -1354,57 +2244,84 @@ footer {
 
     .team {
         width: 100%;
+        height: 370px;
         margin: 0;
         padding: 20px 0px;
     }
 
     #team-up h1 {        
-        font-size: 250%;
-    }
-
-    #team-down {
-        padding: 0;
-        margin: auto;
-    }
-
-
-    #profile {
-        margin: auto;
-        width: 80%;
-        padding: 10px 5px;
+        font-size: 2.5rem;
     }
 
     #team-down #row {
-        margin: auto;
-    }
-
-    #profile-ico {
-        margin: auto;
-        width: 200px;
-        height: 200px;
-        border: 5px solid #FFFFFF;
-    }
-
-    #profile-ico img {
-        width: 200px;
-    }
-
-    #profile h2 {
-        font-size: 120%;
-        margin-top: 10px;
         padding: 0;
+        margin: 0;
+        justify-content: space-evenly;
     }
 
+    #profile {
+        margin: 0;
+        padding: 5px 0px;
+        position: relative;
+        height: 100px;
+        width: 100px;
+    }
+    
+    #profile-top {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border: 3px solid #FFFFFF;
+        border-radius: 100%;
+        overflow: hidden;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+    
+    #profile-top img {
+        width: 100%;
+    }
+    
+    #profile-bottom {
+        width: 96px;
+        padding: 20px 5px;
+        border-radius: 100%;
+        z-index: 0;
+        opacity: 0;
+        
+        transition: .2s ease-in-out;
+    }
+    
+    #profile-bottom h2 {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    
+    #profile-bottom h2 span {
+        font-size: 0.7rem;
+    }
+    
+    #profile-bottom p {
+        font-size: 0.5rem;
+        padding: 0px 5px;
+        margin: 5px 0px;
+    }
+    
+    #profile-top:hover ~ #profile-bottom  {
+        opacity: 1;
+        border-radius: 5%;
+        padding-top: 75px;
+        transform: translateY(40px);
+    }
+    
     .team #lm-button {
-        padding: 0px 30px;
-
+        padding: 0px 20px;
+        margin-top: 80px;
+        text-align: right;
     }
-
+    
     .team #lm-button a {
-        font-size: 80%;
-    }
-    .team #lm-button i {
-        font-size: 100%;
+        font-size: 0.9rem;
     }
 
     /* Testimonials Styling */
@@ -1415,7 +2332,7 @@ footer {
     }
 
     #testimonials-up h1 {
-        font-size: 300%;
+        font-size: 2.5rem;
         margin: 0;
         margin-bottom: 30px;
     }
@@ -1433,13 +2350,13 @@ footer {
     .slide-parent {
         margin: auto;
         width: 50%;
-        height: 320px;
     }
 
     #testimonials-card {
         width: 100%;
         height: 250px;
         padding: 10px 0px;
+        padding-top: 30px;
         margin: auto;
     }
     #testimonials-card #row {
@@ -1541,7 +2458,7 @@ footer {
 
     #pic-cardLeft {
         margin: 0;
-        margin-left: -270px;
+        margin-left: -250px;
         width: 450px;
         height: 450px;
     }
@@ -1559,7 +2476,7 @@ footer {
 
     #pic-cardRight {
         margin: 0;
-        margin-left: 150px;
+        margin-left: 80px;
         width: 450px;
         height: 450px;
     }
@@ -1571,20 +2488,18 @@ footer {
         margin-left: -150px;
     }
 
-
-    
-
-    /* Tablet Services Page View Settings goes here */
-
-
     /* Tablet Portfolio Page View Settings goes here */
     .portfolio {
         width: 100%;
     }
 
     .portfolio-main {
-        padding: 20px 100px;
+        padding: 20px 50px;
         margin: 0;
+    }
+
+    #portfolio-main-left {
+        
     }
 
     #portfolio-main-left h1 {
@@ -1602,7 +2517,7 @@ footer {
     }
 
     .work {
-        padding: 30px 100px;
+        padding: 30px 50px;
         margin: 0;
     }
 
@@ -1615,7 +2530,7 @@ footer {
     }
     
     .webDev {
-        padding: 40px 100px;
+        padding: 40px 40px;
         margin: 0;
     }
     
@@ -1636,7 +2551,7 @@ footer {
     }
 
     #webDev-right #pCard1 {
-        height: 170px;
+        height: 150px;
     }
     
     #webDev-right #pCard1 img {
@@ -1650,7 +2565,7 @@ footer {
     }
 
     .graphDesign {
-        padding: 40px 100px;
+        padding: 40px 40px;
     }
 
     #graphDesign-left {
@@ -1674,12 +2589,12 @@ footer {
     }
 
     #graphDesign-left #pCard1 h2 {
-        font-size: 80%;
+        font-size: 70%;
         margin: 15px 0px;
     }
 
     #graphDesign-left #pCard1 a {
-        font-size: 60%;
+        font-size: 50%;
         padding: 3px 8px ;
         border: 2px solid #5D0492;
     }
@@ -1716,7 +2631,7 @@ footer {
     }
 
     #wpDev-right #pCard1 {
-        height: 200px;
+        height: 170px;
     }
 
     #wpDev-right #pCard1 a {
@@ -1727,7 +2642,7 @@ footer {
 
     /* Tablet Services Page View Settings goes here */
     .oServices-main {
-        padding: 80px 50px;
+        padding: 20px 50px;
         margin: 0;
     }
 
@@ -1766,48 +2681,46 @@ footer {
         width: 100%;
         margin: 0;
         margin-top: -100px;
-        margin-left: -100px;
-        transition: .2s ease-in-out;
+        margin-left: -50px;
     }
     
     #servicesCardIcoBG img {
-        width: 30%;
+        width: 40%;
         margin: 0;
-        margin-top: 150px;
-        margin-left: 155px;
-        transition: .2s ease-in-out;
+        margin-top: 140px;
+        margin-left: 80px;
     }
 
     #servicesCard:hover #servicesCardIcoBG {
-        transform: scale(0.8);
+        margin-top: -200px;
+        margin-left: -120px;
     }
 
     #servicesCard:hover #servicesCardIcoBG > img {
-        transform: scale(0.8);
-        margin-top: 110px;
-        margin-left: 220px;
+        width: 20%;
+        margin-top: 220px;
+        margin-left: 140px;
     }
 
     #servicesCardHeading {
-        width: 50%;
+        width: 80%;
         font-size: 150%;
         line-height: 30px;
-        margin-top:  -50px;
-        margin-left: -30px;
+        margin-top: -50px;
+        margin-left: -175px;
     }
 
     #moreInfo {
         margin: 0;
         margin-left: auto;
-        padding: 50px 20px;
-        
+        padding: 40px 25px;
+        /* text-align: right; */
     }
 
     #moreInfo h1 {
         width: 95%;
         font-size: 120%;
         line-height: 22px;
-        margin-left: auto;
         text-align: right;
     }
     
@@ -1815,7 +2728,8 @@ footer {
         font-size: 90%;
         text-align: right justify;
         line-height: 20px;
-        margin: 20px 0px;
+        margin: 10px 0px;
+        margin-top: 5px;
     }
 
     #moreInfo a {
@@ -1826,9 +2740,10 @@ footer {
     }
 }
 
+
 /* Table View Settings goes here*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .active {
         border-bottom: 2px solid #5D0492;
     }
@@ -1837,329 +2752,102 @@ footer {
         border-bottom: 5px solid #FFFFFF;
     }
 
-    header {
-        width: 100%;      
-        padding: 20px 0px; 
-        margin: 0;
-        justify-content: space-around;
-        overflow: none;
-    }
-
-    #header-left {
-        width: 10%;
-    }
-
-    header nav {
-        width: 100%;
-    }
-
-    #header-left img{
-        width: 100%;
-    }
-    
-    nav ul li a {
-        margin: 0px 10px;
-        font-size: 80%;
-    }
-
-    .main-container {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        margin-top: 0px;
-        height: 480px;
-    }
-    
-    #main-left {
-        padding: 0px 30px;
-        width: 50%;
-    }
-
-    #main-left h1 {
-        font-size: 250%;
-        line-height: 40px;
-        margin-top: 0;
-    }
-
-    #main-left p {
-        font-size: 100%;
-        margin-top: 10px;
-    }
-
-    #main-left a {
-        font-size: 100%;
-        border: 1px solid #5D0492;
-        padding: 10px 20px;
-        border-radius: 5px 20px 5px 20px;
-    }
-
-    #main-right {
-        margin-top: -200px;
-        margin-left: -100px;
-    }
-
     #main-right img {
-        margin: 0;
         margin-top: 470px;
-        width: 130%;
-    }
-
-    .services {
-        padding: 20px 0px;
-        margin: 0;
-        justify-content: space-evenly;
-        background-size: cover;
-    }
-
-    #services-up #underline {
-        border-bottom: 5px solid #5D0492;
-    }
-
-    #services-up h1 {
-        font-size: 250%;
-    }
-
-    #services-up p {
-        font-size: 100%;
-    }
-
-    #row {
-        width: 100%;
-    }
-
-    .services #row {
-        margin: 0;
-        padding: 0;
-    }
-
-    #services-down {
-        justify-content: center;
-        margin: auto;
-        width: 100%;
-    }
-
-    #services-down #row {
-        margin: auto;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #services-down #row #card  {
-        width: 25%;
-        height: 260px;
-        padding: 30px 10px;
-        margin: 30px 10px;
-        background-position: -40px 150px;
-        text-align: center;
-    }
-
-    #services-down #row #card img {
-        height: 25%;
     }
 
     #services-down #row #card h1 {
         width: 90%;
-        font-size: 110%;
+        font-size: 1.1rem;
         margin: auto;
         padding: 5px 10px;
-        
         line-height: 20px;
     }
 
     #services-down #row #card p {
+        margin-top: 45px;
+    }
+
+    /* .team {
         width: 100%;
-        font-size: 75%;
-        margin-top: 30px;
-        margin-bottom: 0px;
-    }
-
-    #services-down #row #card a {
-        font-size: 70%;
-        margin: 0;
-    }
-
-    #services-down #row #card #lm-button a {
-        font-size: 70%;
-    }
-
-    .team {
-        width: 100%;
+        height: 400px;
         margin: 0;
         padding: 20px 0px;
     }
 
-    #team-up h1 {        
-        font-size: 250%;
-    }
-
-    #team-down {
+    #team-down #row {
         padding: 0;
-        margin: auto;
+        margin: 0;
+        justify-content: space-around;
     }
-
 
     #profile {
-        margin: auto;
-        width: 80%;
-        padding: 20px 10px;
+        margin: 0;
+        padding: 5px 0px;
+        position: relative;
+        height: 100px;
+        width: 100px;
     }
-    #team-down #row {
-        margin: auto;
+    
+    #profile-top {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border: 3px solid #FFFFFF;
+        border-radius: 100%;
+        overflow: hidden;
+        background-color: #FFFFFF;
+        z-index: 1;
     }
-
-    #profile-ico {
-        margin: auto;
-        width: 200px;
-        height: 200px;
-        border: 5px solid #0C44A1;
+    
+    #profile-top img {
+        width: 100%;
     }
-
-    #profile-ico img {
-        width: 200px;
+    
+    #profile-bottom {
+        width: 96px;
+        padding: 20px 5px;
+        border-radius: 100%;
+        z-index: 0;
+        opacity: 0;
+        
+        transition: .2s ease-in-out;
     }
-
-    #profile h2 {
-        font-size: 120%;
-        margin-top: 10px;
-        padding: 0;
+    
+    #profile-bottom h2 {
+        font-size: 1rem;
+        font-weight: 800;
     }
-
+    
+    #profile-bottom h2 span {
+        font-size: 0.7rem;
+    }
+    
+    #profile-bottom p {
+        font-size: 0.5rem;
+        padding: 0px 5px;
+        margin: 5px 0px;
+    }
+    
+    #profile-top:hover ~ #profile-bottom  {
+        opacity: 1;
+        border-radius: 5%;
+        padding-top: 75px;
+        transform: translateY(40px);
+    }
+    
     .team #lm-button {
-        padding: 0px 30px;
-
-    }
-
-    .team #lm-button a {
-        font-size: 100%;
-    }
-    .team #lm-button i {
-        font-size: 100%;
-    }
-
-    /* Testimonials Styling */
-    .testimonials {
-        padding: 20px 100px;
-        margin: 0;
-        height: 390px;
-    }
-
-    #testimonials-up h1 {
-        font-size: 300%;
-        margin: 0;
-        margin-bottom: 30px;
-    }
-
-    #testimonials-down {
-        height: 250px;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    #testimonials-down button {
-        font-size: 20%;
-    }
-
-    .slide-parent {
-        margin: auto;
-        width: 50%;
-    }
-
-    #testimonials-card {
-        width: 100%;
-        height: 250px;
-        padding: 10px 0px;
-        margin: auto;
-    }
-    #testimonials-card #row {
-        text-align: center;
-        align-items: center;
         padding: 0px 20px;
-        margin: auto;
-    }
-
-    #testimonials-profile-ico {
-        width: 30%;
-        margin: auto;
-    }
-
-    #rating-stars {
-        text-align: left;
-        width: 100%;
-        margin: 10px 0px;
-        margin-left: 20px;
-        padding: 0;
-    }
-
-    #rating-stars h1 {
-        font-size: 120%;
-    }
-    
-    #rating-stars i {
-        font-size: 100%;
-        margin: 0px 0px;
-        margin-bottom: 5px;
-    }
-
-    #review p {
-        text-align: justify;
-        margin: 0;
-        font-size: 80%;
-        padding: 0px 30px;
-    }
-
-
-    /* Footer Styling  */
-    footer {
-        padding: 20px 100px;
-        margin: 0;
-    }
-    
-    #footer-top {
-        padding: 0px 0px;
-    }
-
-    #footer-top-left {
-        margin-left: 10px;
-        display: flex;
-    }
-
-    #footer-top-left i {
-        display: flex;
-        margin: 20px 10px;
-        font-size: 80%;
-    }
-
-    #footer-top-right ul {
-        display: flex;
-    }
-
-    #footer-top-right ul li {
-        margin: 0;
+        margin-top: 80px;
         text-align: right;
-        margin-left: 10px;
-        border-left: 2px solid #FFFFFF;
-        padding-left: 10px;
     }
-
-    #footer-top-right ul li:first-child {
-        border-left: none;
-    }
-
-    #footer-top-right ul li a {
-        border: none;
-        margin: 10px 0px;
-        padding: 0;
-        font-size: 75%;
-    }
-
-    #footer-bottom {
-        margin-top: 10px;
-    }
-    #footer-bottom p {
-        font-size: 75%;
-    }
+    
+    .team #lm-button a {
+        font-size: 0.9rem;
+    } */
 
 
+    /* Portfolio Page */
     /* Pic Card goes here */
     #round-pic-card {
         margin-right: -200px;
@@ -2553,7 +3241,7 @@ footer {
 
     #services-down #row #card  {
         width: 80%;
-        height: 280px;
+        height: 260px;
         padding: 30px 30px;
         margin: 30px auto;
 
@@ -2576,7 +3264,7 @@ footer {
 
     #services-down #row #card p {
         font-size: 85%;
-        margin-top: 50px;
+        margin-top: 60px;
         margin-bottom: 0px;
     }
 
@@ -2591,6 +3279,7 @@ footer {
 
     .team {
         width: 100%;
+        height: 1300px;
         padding: 30px 0px;
     }
 
@@ -2604,49 +3293,94 @@ footer {
     }
 
     #team-down {
-        padding: 0;
+        padding: 40px 0px;
         margin: auto;
     }
 
     #team-down #row {
-        width: 100%;
+        padding: 0;
         margin: auto;
-        align-items: center;
-        justify-content: center;
     }
 
     #profile {
-        padding: 20px 10px;
         margin: auto;
+        padding: 20px 20px;
+        position: relative;
+        height: 150px;
+        width: 150px;
     }
-    #profile-ico {
-        margin: auto;
-        width: 200px;
-        height: 200px;
+    
+    #profile-top {
+        width: 150px;
+        height: 150px;
         border: 5px solid #FFFFFF;
+        transition: 0.2s ease-in-out;
     }
-
-    #profile-ico img {
-        width: 200px;
+    
+    #profile-top img {
+        width: 100%;
     }
-
-    #profile h2 {
-        font-size: 120%;
-        margin-top: 10px;
+    
+    #profile-bottom {
+        text-align: left;
+        height: 120px;
+        width: 180px;
+        padding: 20px 10px;
+        border-radius: 5%;
+    }
+    
+    #profile-bottom h2 {
+        font-size: 1.1rem;
+        font-weight: 800;
+    }
+    
+    #profile-bottom h2 span {
+        font-size: 1.0rem;
+    }
+    
+    #profile-bottom p {
+        text-align: justify;
+        font-size: 0.8rem;
         padding: 0;
+        margin: 5px 0px;
     }
 
+    #profile-top:hover {
+        transform: translateX(-100px);
+    }
+
+    #profile-top:hover ~ #profile-bottom  {
+        opacity: 1;
+        padding-top: 20px;
+        padding-left: 95px;
+        transform: translateX(-30px);
+        /* opacity: 1; */
+    }
+    
     .team #lm-button {
-        margin: auto;
-        padding: 0px 30px;
+        padding: 0px 50px;
+        margin: 0;
+        font-size: 0.8rem;
     }
-
+    
     .team #lm-button a {
-        font-size: 90%;
-
+        color:#FFFFFF;
+        font-size: 120%;
+        text-decoration: none;
+    
+        transition-property: color, font-weight;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
     }
+    
+    .team #lm-button a:hover {
+        color: #5D0492;
+        font-weight: 600;
+    }
+    
     .team #lm-button i {
-        font-size: 90%;
+        margin-left: 10px;
     }
 
     /* Testimonials Styling */
