@@ -120,7 +120,7 @@ nav ul li a:hover {
 
 .active {
     color:#5D0492;
-    font-weight: 600;
+    font-weight: 800;
     border-bottom: 5px solid #5D0492;
 }
 
@@ -147,12 +147,11 @@ nav ul li a:hover {
     line-height: 70px; 
     text-transform: uppercase;
     margin-top: -90px;
-    /* margin-bottom: 20px; */
 }
 
 #main-left p {
-    font-size: 150%;
-    font-weight: 300;
+    font-size: 1.4rem;
+    font-weight: 400;
 
     margin: 50px 0px;
     margin-top: 20px;
@@ -638,14 +637,22 @@ footer {
 
 
 /* Portfolio Page Styling goes here */
-
 .portfolio span {
     padding: 0;
     margin: 0;
 }
 
 .portfolio h1 {
-    
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.portfolio p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 20px 0px;
+    text-align: justify;
 }
 
 #row {
@@ -668,17 +675,12 @@ footer {
 }
 
 #portfolio-main-left h1 {
-    font-size: 600%;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-size: 6rem;
 }
 
 #portfolio-main-left p {
-    font-size: 150%;
-    font-weight: 400;
-    width: 70%;
-    
+    width: 70%; 
+    font-weight: 400; 
 }
 
 #porfolio-main-right {
@@ -700,24 +702,16 @@ footer {
 }
 
 .work {
-    padding: 50px 300px;
+    padding: 70px 300px;
     text-align: center;
     background-image: linear-gradient(to right, #2E004F, #5D0492);
-
     color:#FFFFFF;
     text-align: justify center;
 }
 
-.work h1 {
-    font-size: 400%;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
 .work p {
-    font-size: 150%;
-    font-weight: 400;
-    margin-top: 20px;
+    margin-top: 40px;
+    text-align: center;
 }
 
 /* Web Designing & Development Styling goes here */
@@ -760,17 +754,8 @@ footer {
 
 #webDev-right h1{
     width: 60%;
-    font-size: 400%;
-    font-weight: 600;
     line-height: 70px;
     text-transform: uppercase;
-}
-
-#webDev-right p {
-    font-size: 150%;
-    font-weight: 300;
-    margin: 20px 0px;
-    text-align: justify;
 }
 
 #webDev-right #pCard1 {
@@ -802,7 +787,6 @@ footer {
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
     transition-delay: 0.1;
-    
 }
 
 #webDev-right #pCard1 a:hover {
@@ -827,20 +811,8 @@ footer {
 }
 
 #graphDesign-left h1 {
-    font-size: 400%;
-    font-weight: 600;
-    text-transform: uppercase;
-
     width: 60%;
     line-height: 70px;
-}
-
-#graphDesign-left p {
-    font-size: 150%;
-    font-weight: 300;
-    text-align: justify;
-
-    margin: 20px 0px;
 }
 
 #graphDesign-left #row {
@@ -930,7 +902,6 @@ footer {
     transform: rotate(-45deg);
 }
 
-
 /* Wordpress Development Styling goes here */
 .wpDev {
     padding: 20px 200px;
@@ -943,7 +914,6 @@ footer {
 
 #wpDev-left{
     width: 40%;
-    /* overflow: hidden; */
 }
 
 #wpDev-left #pic-cardLeft img {
@@ -957,20 +927,9 @@ footer {
     color: #FFFFFF;
 }
 
-#wpDev-right h1{
+#wpDev-right h1 {
     width: 90%;
-    font-size: 400%;
-    font-weight: 600;
     line-height: 70px;
-    text-transform: uppercase;
-}
-
-#wpDev-right p {
-    font-size: 150%;
-    font-weight: 300;
-    margin: 20px 0px;
-    text-align: justify;
-    /* text-transform: uppercase; */
 }
 
 #wpDev-right #pCard1 {
@@ -1001,8 +960,7 @@ footer {
     transition-property: color, background-color, box-shadow;
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
-    transition-delay: 0.1;
-    
+    transition-delay: 0.1;    
 }
 
 #wpDev-right #pCard1 a:hover {
@@ -1047,7 +1005,7 @@ footer {
 }
 
 #oServices-main-left p {
-    font-size: 150%;
+    font-size: 1.4rem;
     width: 70%;
 }
 
@@ -1059,18 +1017,16 @@ footer {
 .servInfo {
     padding: 45px 200px;
     color: #FFFFFF;
-
     background-image: linear-gradient(to right top, #001C44, #0C44A1);
 }
 
 #servicesCard {
-    /* text-align: center; */
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #FFFFFF;
     border-radius: 20px;
-    width: 650px;
-    height: 400px;
+    width: 450px;
+    height: 460px;
     position: relative;
     overflow: hidden;
 }
@@ -1091,9 +1047,9 @@ footer {
 }
 
 #servicesCard:hover > #servicesCardIcoBG {
-    transform: scale(0.5);
-    margin-top: -100px;
-    margin-left: -200px;
+    transform: scale(0.4);
+    margin-top: -110px;
+    margin-left: -230px;
 }
 
 #servicesCardIcoBG img {
@@ -1109,19 +1065,15 @@ footer {
 
 #servicesCard:hover > #servicesCardIcoBG > img {
     transform: scale(0.7);
-    /* margin-left: 325px;
-    margin-top: 160px;    */
 }
 
 #moreInfo {
     opacity: 0;
     text-align: center;
     color:#5D0492;
-    /* text-align: right; */
-    margin-left: 200px;
+    margin-left: 150px;
     margin-top: 50px;
     width: 60%;
-
 
     transition-property: opacity;
     transition-duration: 0.1s;
@@ -1131,8 +1083,8 @@ footer {
 
 #moreInfo h1 {
     text-align: left;
-    font-size: 200%;
-    width: 80%;
+    font-size: 1.8rem;
+    width: 100%;
     line-height: 35px;
     text-transform: uppercase;
 }
@@ -1141,7 +1093,7 @@ footer {
     text-align: justify;
     margin: 10px 0px;
     margin-bottom: 30px;
-    font-size: 120%;
+    font-size: 1.2rem;
 }
 
 #moreInfo a {
@@ -1151,7 +1103,7 @@ footer {
     border-radius: 50px;
     text-decoration: none;
     font-weight: 800;
-    font-size: 120%;
+    font-size: 1.2rem;
 
     transition-property: color, background-color;
     transition-duration: 0.2s;
@@ -1164,19 +1116,17 @@ footer {
     background-color: #5D0492;
 }
 
-
-
 #servicesCardHeading {
-    width: 60%;
+    width: 70%;
     color: #5D0492;
-    font-size: 250%;
+    font-size: 2rem;
+    line-height: 40px;
     text-align: right;
     text-transform: uppercase;
-    line-height: 50px;
     margin: auto;
     position: absolute;
-    top: 280px;
-    left: 220px;
+    top: 360px;
+    left: 110px;
 
     opacity: 1;
 
@@ -1187,7 +1137,6 @@ footer {
 }
 
 #servicesCard:hover #servicesCardHeading {
-    /* opacity: 0; */
     display: none;
 }
 
@@ -1195,6 +1144,429 @@ footer {
     opacity: 1;
 }
 
+
+/* Team Page Styling goes here */
+.oTeam span {
+    padding: 0;
+    margin: 0;
+}
+
+.oTeam h1 {
+    color: #FFFFFF;
+    font-size: 6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.oTeam h2 {
+    color: #FFFFFF;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.oTeam h3 {
+    color: #FFFFFF;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.oTeam h4 {
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.oTeam p {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.oTeam ol {
+    margin-left: 30px;
+}
+
+.oTeam ol li {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin: 2px 0px;
+}
+
+.oTeam-main {
+    padding: 45px 200px;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.9);
+
+    align-items: center;
+    overflow: hidden;
+}
+
+#oTeam-main-left {
+    color: #FFFFFF;
+    width: 80%;
+    margin-top: -100px;
+}
+
+#oTeam-main-left p {
+    width: 70%;  
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+#oTeam-main-right {
+    width: 20%;
+}
+
+#round-pic-card {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: -400px;
+}
+
+#round-pic-card img {
+    height: 700px;
+    margin-left: -180px;
+}
+
+.profile1 {
+    padding: 20px 200px;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-image: linear-gradient(to left, #001C44, #0C44A1);
+}
+
+#profile1-left{
+    width: 25%;
+}
+
+.oTeam #profile1-card { 
+    width: 800px;
+    height: 800px;
+    background-color: #2E004F;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15%;
+    margin-left: -480px;
+    box-shadow: 15px -15px 40px rgb(0, 0, 0, 0.5);   
+}
+
+.oTeam #profile1-card img { 
+    height: 100%;
+    margin-left: 200px;
+}
+
+#profile1-right {
+    width: 75%;
+}
+
+.profile2 {
+    padding: 20px 200px;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #2E004F, #5D0492);
+}
+
+#profile2-left {
+    width: 75%;
+}
+
+.oTeam #profile2-card { 
+    width: 800px;
+    height: 800px;
+    background-color: #2E004F;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15%;
+    margin-left: 80px;
+    box-shadow: -15px 15px 40px rgb(0, 0, 0, 0.5);   
+}
+
+.oTeam #profile2-card img { 
+    height: 100%;
+    margin-left: 0px;
+}
+
+#profile2-right {
+    width: 25%;
+}
+
+/* Abouts Page Styling goes here */
+.abouts span {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+}
+
+.abouts h1 {
+    color: #FFFFFF;
+    font-size: 6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.abouts h2 {
+    color: #FFFFFF;
+    font-size: 4rem;
+    text-transform: initial;
+    font-weight: 600;
+}
+
+.abouts p {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.abouts ul {
+    margin-left: 30px;
+}
+
+.abouts ul li {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin: 2px 0px;
+}
+
+.abouts-main {
+    padding: 45px 200px;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.9);
+
+    align-items: center;
+    overflow: hidden;
+}
+
+#abouts-main-left {
+    color: #FFFFFF;
+    width: 80%;
+    margin-top: -100px;
+}
+
+#abouts-main-left p {
+    width: 70%;  
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+#abouts-main-right {
+    width: 20%;
+}
+
+#round-pic-card {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: -400px;
+}
+
+#round-pic-card img {
+    height: 700px;
+    margin-left: -180px;
+}
+
+.oAbouts {
+    padding: 20px 200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-image: linear-gradient(to left, #2E004F, #5D0492);
+}
+
+#oAbouts-left{
+    width: 30%;
+}
+
+.abouts #oAbouts-card { 
+    width: 650px;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15%;
+    margin-left: -280px;
+    box-shadow: 15px -15px 40px rgb(0, 0, 0, 0.5);   
+}
+
+.abouts #oAbouts-card img { 
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -50px;
+    height: 850px;
+}
+
+#oAbouts-right {
+    width: 70%;
+}
+
+
+/* Contact Us Page Styling goes here */
+.contactUs span {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+}
+
+.contactUs h1 {
+    color: #FFFFFF;
+    font-size: 6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contactUs h2 {
+    color: #FFFFFF;
+    font-size: 4rem;
+    text-transform: initial;
+    font-weight: 600;
+}
+
+.contactUs p {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+
+.contactUs-main {
+    padding: 45px 200px;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.9);
+
+    align-items: center;
+    overflow: hidden;
+}
+
+#contactUs-main-left {
+    color: #FFFFFF;
+    width: 80%;
+    margin-top: -100px;
+}
+
+#contactUs-main-left p {
+    width: 70%;  
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+#contactUs-main-right {
+    width: 20%;
+}
+
+.contactUs #round-pic-card {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: -400px;
+}
+
+.contactUs #round-pic-card img {
+    height: 700px;
+    margin-left: -80px;
+}
+
+.contactUs form {
+    background-image: linear-gradient(to left, #001C44, #0C44A1);
+    width: 50%;
+    /* border: 2px solid #FFFFFF; */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.contactUs form input {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #FFFFFF;
+    margin: 20px 5px;
+    padding: 5px 10px;
+}
+
+.contactUs form #name {
+    width: 44%;
+}
+
+.contactUs form #email {
+    width: 50%;
+}
+
+.contactUs form textarea {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #FFFFFF;
+    margin: 20px 5px;
+    padding: 5px 10px;
+}
+
+::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+textarea::placeholder {
+    position: absolute;
+    bottom: 5%;
+}
+
+.contactUs form button {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 8px 20px;
+    margin: 20px 0px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    align-self: center;
+    width: 30%;
+
+    transition: 0.2s ease-in-out;
+}
+
+.contactUs form button:hover {
+    color: #0C44A1;
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0, 0.5));
+    background-color: #FFFFFF;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+textarea:focus::placeholder {
+    color: transparent;
+}
 
 @media screen and (max-width: 1440px) {
     .active {
@@ -1284,33 +1656,6 @@ footer {
         padding: 60px 160px;
     }
 
-    /* .services {
-        color: #FFFFFF;
-        background-color: #000000;
-        text-align: center;
-        padding: 60px 200px;
-        background-image: url('../imgs/ourServicesBG.png');
-    }
-    
-    #services-up #underline {
-        border-bottom:  8px solid #5D0492;
-    }
-    
-    
-    #services-up h1 {
-        color: #FFFFFF;
-        font-size: 400%;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-    
-    #services-up p {
-        color: #FFFFFF;
-        font-size: 150%;
-        font-weight: 300;
-        padding: 20px 0px;
-    } */
-    
     #card {
         margin: 0px 20px;
         padding: 30px 30px;
@@ -1533,382 +1878,126 @@ footer {
     
     
     /* Portfolio Page Styling goes here */
-    
-    .portfolio span {
-        padding: 0;
-        margin: 0;
-    }
-    
-    
-    #row {
-        justify-content: space-between;
-    }
-    
-    .portfolio-main {
-        padding: 45px 200px;
-        display: flex;
-        background-color: rgb(0, 0, 0, 0.9);
-    
-        align-items: center;
-        overflow: hidden;
-    }
-    
-    #portfolio-main-left {
-        color: #FFFFFF;
-        width: 80%;
-        margin-top: -100px;
-    }
-    
-    #portfolio-main-left h1 {
-        font-size: 600%;
+    .portfolio h1 {
+        font-size: 3.5rem;
         font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
     }
-    
+
+    .portfolio p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin: 20px 0px;
+    }
+
+    #portfolio-main-left h1 {
+        font-size: 4rem;
+    }
+
     #portfolio-main-left p {
-        font-size: 150%;
-        font-weight: 400;
-        width: 70%;
-        
+        width: 70%;  
     }
-    
-    #porfolio-main-right {
-        width: 20%;
-    }
-    
+
     #round-pic-card {
-        width: 700px;
-        height: 700px;
-        border-radius: 50%;
-        overflow: hidden;
-        position: relative;
-        margin-right: -400px;
+        width: 600px;
+        height: 600px;
     }
-    
+
     #round-pic-card img {
-        height: 700px;
-        margin-left: -180px;
+        height: 100%;
     }
-    
+
     .work {
-        padding: 50px 300px;
+        padding: 70px 300px;
         text-align: center;
         background-image: linear-gradient(to right, #2E004F, #5D0492);
-    
         color:#FFFFFF;
         text-align: justify center;
     }
-    
-    .work h1 {
-        font-size: 400%;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-    
+
     .work p {
-        font-size: 150%;
-        font-weight: 400;
-        margin-top: 20px;
+        margin-top: 40px;
+        text-align: center;
     }
-    
+
     /* Web Designing & Development Styling goes here */
-    .webDev {
-        padding: 20px 200px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        background-image: linear-gradient(to left, #001C44, #0C44A1);
-    }
-    
-    #webDev-left{
-        width: 40%;
-    }
-    
     #pic-cardLeft { 
-        width: 900px;
-        height: 900px;
-        background-color: #2E004F;
-        overflow: hidden;
-        position: relative;
-        border-radius: 15%;
-        transform: rotate(45deg);
-        margin-left: -480px;
-        box-shadow: 15px -15px 40px rgb(0, 0, 0, 0.5);   
-    }
-    
-    #pic-cardLeft img { 
-        margin-top: 50px;
+        width: 800px;
+        height: 800px;
         margin-left: -550px;
-        height: 1000px;
-        transform: rotate(-45deg);
     }
-    
-    #webDev-right {
-        width: 60%;
-        color: #FFFFFF;
-    }
-    
-    #webDev-right h1{
-        width: 60%;
-        font-size: 400%;
-        font-weight: 600;
-        line-height: 70px;
-        text-transform: uppercase;
-    }
-    
-    #webDev-right p {
-        font-size: 150%;
-        font-weight: 300;
-        margin: 20px 0px;
-        text-align: justify;
-    }
-    
-    #webDev-right #pCard1 {
-        text-align: center;
-        display: block;
-        background-color: #FFFFFF;
-        border-radius: 25px;
-        height: 300px;
-        width: 45%;
-        overflow: hidden;
-        box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
-    }
-    
-    #webDev-right #pCard1 img {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-    #webDev-right #pCard1 a {
-        text-decoration: none;
-        color: #0C44A1;
-        font-size: 110%;
-        font-weight: 800;
-        padding: 10px 30px; 
-        border-radius: 50px;
-        border: 3px solid #0C44A1;
-    
-        transition-property: color, background-color, box-shadow;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in;
-        transition-delay: 0.1;
-        
-    }
-    
-    #webDev-right #pCard1 a:hover {
-        color: #FFFFFF;
-        background-color: #0C44A1;
-        box-shadow: 1px 0px 10px rgb(0, 0, 0, 0.5);
-    }
-    
-    
-    .graphDesign {
-        padding: 20px 200px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        background-image: linear-gradient(to right, #2E004F, #5D0492);
-    }
-    
-    #graphDesign-left {
-        width: 60%;
-        color: #FFFFFF;
-    }
-    
-    #graphDesign-left h1 {
-        font-size: 400%;
-        font-weight: 600;
-        text-transform: uppercase;
-    
-        width: 60%;
-        line-height: 70px;
-    }
-    
-    #graphDesign-left p {
-        font-size: 150%;
-        font-weight: 300;
-        text-align: justify;
-    
-        margin: 20px 0px;
-    }
-    
-    #graphDesign-left #row {
-        justify-content: space-between;
-    }
-    
-    #graphDesign-left #pCard1 {
-        text-align: center;
-        display: block;
-        background-color: #FFFFFF;
-        border-radius: 25px;
-        height: 330px;
-        width: 30%;
-        overflow: hidden;
-        box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
-    }
-    
-    #graphDesign-left #pCard1Img {
-        height: 200px;
-        overflow: hidden;
-    }
-    
-    #graphDesign-left #pCard1 img {
-        align-items: center;
-        width: 100%;
-    
-        transition: transform, 0.1s, ease-in, 0.7s;
-    }
-    
-    #graphDesign-left #pCard1 img:hover {
-        transform: scale(1.2);
-    }
-    
-    #graphDesign-left #pCard1 h2 {
-        color: #5D0492;
-        font-size: 150%;
-        text-transform: initial;
-        text-align: center;
-        margin: 0px auto;
-        margin-top: 15px;
-        margin-bottom: 25px;
-    }
-    
-    #graphDesign-left #pCard1 a {
-        text-decoration: none;
-        color: #5D0492;
-        font-size: 90%;
-        font-weight: 800;
-        padding: 5px 20px; 
-        border-radius: 50px;
-        border: 3px solid #5D0492;
-    
-        transition-property: color, background-color, box-shadow;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in;
-        transition-delay: 0.1;
-        
-    }
-    
-    #graphDesign-left #pCard1 a:hover {
-        color: #FFFFFF;
-        background-color: #5D0492;
-        box-shadow: 1px 0px 10px rgb(0, 0, 0, 0.5);
-    }
-    
-    
-    #graphDesign-right {
-        width: 40%;
-    }
-    
-    #pic-cardRight { 
-        width: 900px;
+
+    #pic-cardLeft img { 
+        margin-top: -60px;
+        margin-left: -350px;
         height: 900px;
-        background-color: #2E004F;
-        overflow: hidden;
-        position: relative;
-        border-radius: 15%;
-        transform: rotate(45deg);
-        margin-left: 200px;
-        box-shadow: -15px 15px 40px rgb(0, 0, 0, 0.5);   
     }
-    
-    #pic-cardRight img { 
-        margin-top: -5px;
-        margin-left: -280px;
-        height: 960px;
-        transform: rotate(-45deg);
-    }
-    
-    
-    /* Wordpress Development Styling goes here */
-    .wpDev {
-        padding: 20px 200px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        background-image: linear-gradient(to left, #001C44, #0C44A1);
-    }
-    
-    #wpDev-left{
-        width: 40%;
-        /* overflow: hidden; */
-    }
-    
-    #wpDev-left #pic-cardLeft img {
-        margin: 0;
-        margin-top: -180px;
-        margin-left: 180px;
-    }
-    
-    #wpDev-right {
-        width: 60%;
-        color: #FFFFFF;
-    }
-    
-    #wpDev-right h1{
-        width: 90%;
-        font-size: 400%;
-        font-weight: 600;
-        line-height: 70px;
-        text-transform: uppercase;
-    }
-    
-    #wpDev-right p {
-        font-size: 150%;
-        font-weight: 300;
-        margin: 20px 0px;
-        text-align: justify;
-        /* text-transform: uppercase; */
-    }
-    
-    #wpDev-right #pCard1 {
-        text-align: center;
-        display: block;
-        background-color: #FFFFFF;
-        border-radius: 25px;
-        height: 300px;
-        width: 45%;
-        overflow: hidden;
-        box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
-    }
-    
-    #wpDev-right #pCard1 img {
+
+    #webDev-right h1{
         width: 100%;
-        margin-bottom: 30px;
     }
-    
-    #wpDev-right #pCard1 a {
-        text-decoration: none;
-        color: #0C44A1;
-        font-size: 110%;
+
+    #webDev-right #pCard1 {
+        height: 240px;
+    }
+
+    #webDev-right #pCard1 a {
+        font-size: 1rem;
+        padding: 5px 25px;
+    }
+
+    #graphDesign-left h1 {
+        width: 60%;
+        line-height: 70px;
+    }
+
+    /* Graphic Designing Styling goes here */
+    #graphDesign-left #pCard1 {
+        height: 280px;
+    }
+
+    #graphDesign-left #pCard1Img {
+        height: 150px;
+        overflow: hidden;
+    }
+
+    #graphDesign-left #pCard1 img {
+        width: 110%;
+    }
+
+    #graphDesign-left #pCard1 h2 {
+        font-size: 1.2rem;
+    }
+
+    #graphDesign-left #pCard1 a {
+        font-size: 0.8rem;
         font-weight: 800;
-        padding: 10px 30px; 
-        border-radius: 50px;
-        border: 3px solid #0C44A1;
-    
-        transition-property: color, background-color, box-shadow;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in;
-        transition-delay: 0.1;
-        
+        padding: 5px 15px;        
     }
-    
-    #wpDev-right #pCard1 a:hover {
-        color: #FFFFFF;
-        background-color: #0C44A1;
-        box-shadow: 1px 0px 10px rgb(0, 0, 0, 0.5);
+
+    #pic-cardRight { 
+        width: 800px;
+        height: 800px;
     }
-    
+
+    #pic-cardRight img { 
+        height: 900px;
+    }
+
+    /* Wordpress Development Styling goes here */
+    #wpDev-right #pCard1 {
+        height: 230px;
+    }
+
+    #wpDev-right #pCard1 a {
+        font-size: 1rem;
+        padding: 5px 25px;
+    }
     
     /* Services Page Styling goes here */
     .oServices #row {
         
     }
-    
+
     .oServices {
         color: #FFFFFF;
         overflow: hidden;
@@ -1956,84 +2045,52 @@ footer {
     }
     
     #servicesCard {
-        /* text-align: center; */
-        align-items: center;
-        justify-content: space-between;
-        background-color: #FFFFFF;
         border-radius: 20px;
-        width: 650px;
+        width: 320px;
         height: 400px;
-        position: relative;
-        overflow: hidden;
     }
     
     #servicesCardIcoBG {
-        background-color: #5D0492;
-        border-radius: 0px 0px 1000px 0px;
-        height: 350px;
-        width: 550px;
+        height: 320px;
+        width: 430px;
         margin-left: -150px;
         margin-top: 0px;
-        position: absolute;
-    
-        transition-property: transform, width, margin-left, margin-top;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in;
-        transition-delay: 0.1s;
+
     }
     
     #servicesCard:hover > #servicesCardIcoBG {
-        transform: scale(0.5);
+        transform: scale(0.4);
         margin-top: -100px;
         margin-left: -200px;
     }
     
     #servicesCardIcoBG img {
-        width: 40%;
+        width: 35%;
         margin-left: 200px;
         margin-top: 50px;
-        
-        transition-property: transform, width, margin-left, margin-top;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in;
-        transition-delay: 0.1s;
     }
     
     #servicesCard:hover > #servicesCardIcoBG > img {
         transform: scale(0.7);
-        /* margin-left: 325px;
-        margin-top: 160px;    */
     }
     
     #moreInfo {
-        opacity: 0;
-        text-align: center;
-        color:#5D0492;
-        /* text-align: right; */
-        margin-left: 200px;
+        margin-left: 100px;
         margin-top: 50px;
         width: 60%;
-    
-    
-        transition-property: opacity;
-        transition-duration: 0.1s;
-        transition-timing-function: ease-in;
-        transition-delay: 0.1s;
     }
     
     #moreInfo h1 {
         text-align: left;
-        font-size: 200%;
-        width: 80%;
-        line-height: 35px;
-        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 30px;
     }
     
     #moreInfo p {
         text-align: justify;
         margin: 10px 0px;
         margin-bottom: 30px;
-        font-size: 120%;
+        font-size: 1rem;
     }
     
     #moreInfo a {
@@ -2043,49 +2100,16 @@ footer {
         border-radius: 50px;
         text-decoration: none;
         font-weight: 800;
-        font-size: 120%;
-    
-        transition-property: color, background-color;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in;
-        transition-delay: 0.1s;
+        font-size: 1rem;
     }
-    
-    #moreInfo a:hover {
-        color: #FFFFFF;
-        background-color: #5D0492;
-    }
-    
-    
     
     #servicesCardHeading {
-        width: 60%;
-        color: #5D0492;
-        font-size: 250%;
-        text-align: right;
-        text-transform: uppercase;
-        line-height: 50px;
-        margin: auto;
-        position: absolute;
-        top: 280px;
-        left: 220px;
-    
-        opacity: 1;
-    
-        transition-property: display;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in;
-        transition-delay: 0.1s;
-    }
-    
-    #servicesCard:hover #servicesCardHeading {
-        /* opacity: 0; */
-        display: none;
-    }
-    
-    #servicesCard:hover #moreInfo {
-        opacity: 1;
-    }
+        width: 80%;
+        font-size: 1.7rem;
+        line-height: 35px;
+        top: 315px;
+        left: 45px;
+    }    
 }
 
 
@@ -2448,195 +2472,136 @@ footer {
         font-size: 75%;
     }
 
-
-    /* Pic Card goes here */
-    #round-pic-card {
-        margin-right: -200px;
-        height: 400px;
-        width: 400px;
-    }
-
-    #pic-cardLeft {
-        margin: 0;
-        margin-left: -250px;
-        width: 450px;
-        height: 450px;
-    }
-
-    #pic-cardLeft img {
-        /* width: 100%; */
-        /* height: 100%; */
-        height: 125%;
-        margin: 0;
-        margin-top: -50px;
-        margin-left: -280px;
-        /* width: 600px; */
-        /* height: 600px; */
-    }
-
-    #pic-cardRight {
-        margin: 0;
-        margin-left: 80px;
-        width: 450px;
-        height: 450px;
-    }
-
-    #pic-cardRight img {
-        height: 120%;
-        margin: 0;
-        margin-top: -80px;
-        margin-left: -150px;
-    }
-
     /* Tablet Portfolio Page View Settings goes here */
-    .portfolio {
-        width: 100%;
+    /* Portfolio Page Styling goes here */
+    .portfolio h1 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio p {
+        font-size: 1.2rem;
     }
 
     .portfolio-main {
-        padding: 20px 50px;
-        margin: 0;
-    }
-
-    #portfolio-main-left {
-        
+        padding: 40px 100px;
     }
 
     #portfolio-main-left h1 {
-        font-size: 300%;
-        margin-top: 50px;
+        font-size: 3rem;
     }
-    
+
     #portfolio-main-left p {
-        width: 90%;
-        font-size: 100%;
+        width: 70%;  
+    }
+
+    #round-pic-card {
+        width: 500px;
+        height: 500px;
     }
 
     #round-pic-card img {
-        margin-left: -350px;
+        height: 100%;
     }
 
     .work {
-        padding: 30px 50px;
-        margin: 0;
-    }
-
-    .work h1 {
-        font-size: 300%;
+        padding: 70px 100px;
     }
 
     .work p {
-        font-size: 90%;
+        margin-top: 40px;
+        text-align: center;
     }
-    
+
+    /* Web Designing & Development Styling goes here */
+    #pic-cardLeft { 
+        width: 600px;
+        height: 600px;
+        margin-left: -400px;
+    }
+
+    #pic-cardLeft img { 
+        margin-top: -90px;
+        margin-left: -250px;
+        height: 700px;
+    }
+
     .webDev {
-        padding: 40px 40px;
-        margin: 0;
-    }
-    
-    #webDev-right {
-        width: 55%;
+        padding: 20px 100px;
     }
 
-    #webDev-right h1 {
-        width: 90%;
-        font-size: 250%;
-        line-height: 40px;
-    }
-
-    #webDev-right p {
+    #webDev-right h1{
         width: 100%;
-        font-size: 90%;
-        /* line-height: 50px; */
+        line-height: 50px;
     }
 
     #webDev-right #pCard1 {
-        height: 150px;
-    }
-    
-    #webDev-right #pCard1 img {
-        margin-bottom: 15px;
+        height: 200px;
     }
 
+    
     #webDev-right #pCard1 a {
-        padding: 3px 15px;
-        font-size: 70%;
-        margin: 0;
+        font-size: 1rem;
+        padding: 5px 25px;
     }
 
     .graphDesign {
-        padding: 40px 40px;
-    }
-
-    #graphDesign-left {
-        width: 55%;
+        padding: 20px 100px;
     }
 
     #graphDesign-left h1 {
-        width: 90%;
-        font-size: 250%;
-        line-height: 40px;
+        width: 60%;
+        line-height: 50px;
     }
 
-    #graphDesign-left p {
-        width: 100%;
-        font-size: 90%;
-        /* line-height: 50px; */
-    }
-
+    /* Graphic Designing Styling goes here */
     #graphDesign-left #pCard1 {
-        height: 180px;
+        height: 230px;
+    }
+
+    #graphDesign-left #pCard1Img {
+        height: 120px;
+    }
+
+    #graphDesign-left #pCard1 img {
+        width: 110%;
     }
 
     #graphDesign-left #pCard1 h2 {
-        font-size: 70%;
-        margin: 15px 0px;
+        font-size: 1rem;
     }
 
     #graphDesign-left #pCard1 a {
-        font-size: 50%;
-        padding: 3px 8px ;
-        border: 2px solid #5D0492;
+        font-size: 0.8rem;
+        font-weight: 800;
+        padding: 5px 15px;        
     }
 
-    #graphDesign-left #pCard1 #pCard1Img {
-        height: 90px;
+    #pic-cardRight { 
+        width: 600px;
+        height: 600px;
+        margin-left: 150px;
     }
 
+    #pic-cardRight img { 
+        height: 700px;
+    }
+
+    /* Wordpress Development Styling goes here */
     .wpDev {
-        padding: 40px 40px;
-    }
-
-    #wpDev-left {
-        width: 40%
-    }
-
-    #wpDev-left #pic-cardLeft img {
-        margin: 0;
-        margin-top: -130px;
-        margin-left: 60px;
-    }
-
-    #wpDev-right {
-        width: 55%
+        padding: 20px 100px;
     }
 
     #wpDev-right h1 {
-        font-size: 250%;
-        line-height: 40px;
-    }
-
-    #wpDev-right p {
-        font-size: 90%;        
+        line-height: 50px;
     }
 
     #wpDev-right #pCard1 {
-        height: 170px;
+        height: 200px;
     }
 
     #wpDev-right #pCard1 a {
-        font-size: 90%;
-        padding: 4px 12px;
+        font-size: 1rem;
+        padding: 5px 25px;
     }
 
 
@@ -2673,71 +2638,29 @@ footer {
     }
 
     #servicesCard {
-        width: 45%;
-        height: 300px;
-    }
-
-    #servicesCardIcoBG {
-        width: 100%;
-        margin: 0;
-        margin-top: -100px;
-        margin-left: -50px;
+        width: 290px;
     }
     
-    #servicesCardIcoBG img {
-        width: 40%;
-        margin: 0;
-        margin-top: 140px;
-        margin-left: 80px;
-    }
-
-    #servicesCard:hover #servicesCardIcoBG {
-        margin-top: -200px;
-        margin-left: -120px;
-    }
-
-    #servicesCard:hover #servicesCardIcoBG > img {
-        width: 20%;
-        margin-top: 220px;
-        margin-left: 140px;
-    }
-
-    #servicesCardHeading {
-        width: 80%;
-        font-size: 150%;
-        line-height: 30px;
-        margin-top: -50px;
-        margin-left: -175px;
-    }
-
-    #moreInfo {
-        margin: 0;
-        margin-left: auto;
-        padding: 40px 25px;
-        /* text-align: right; */
-    }
-
     #moreInfo h1 {
-        width: 95%;
-        font-size: 120%;
-        line-height: 22px;
-        text-align: right;
+        font-size: 1.3rem;
+        line-height: 28px;
     }
     
     #moreInfo p {
-        font-size: 90%;
-        text-align: right justify;
-        line-height: 20px;
         margin: 10px 0px;
-        margin-top: 5px;
+        margin-bottom: 30px;
+        font-size: 0.9rem;
     }
-
+    
     #moreInfo a {
-        font-size: 90%;
-        padding: 2px 15px;
-        border: 2px solid #5D0492;
-        
+        font-size: 0.9rem;
     }
+    
+    #servicesCardHeading {
+        width: 80%;
+        font-size: 1.7rem;
+        line-height: 35px;
+    }    
 }
 
 
@@ -2768,84 +2691,6 @@ footer {
         margin-top: 45px;
     }
 
-    /* .team {
-        width: 100%;
-        height: 400px;
-        margin: 0;
-        padding: 20px 0px;
-    }
-
-    #team-down #row {
-        padding: 0;
-        margin: 0;
-        justify-content: space-around;
-    }
-
-    #profile {
-        margin: 0;
-        padding: 5px 0px;
-        position: relative;
-        height: 100px;
-        width: 100px;
-    }
-    
-    #profile-top {
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        border: 3px solid #FFFFFF;
-        border-radius: 100%;
-        overflow: hidden;
-        background-color: #FFFFFF;
-        z-index: 1;
-    }
-    
-    #profile-top img {
-        width: 100%;
-    }
-    
-    #profile-bottom {
-        width: 96px;
-        padding: 20px 5px;
-        border-radius: 100%;
-        z-index: 0;
-        opacity: 0;
-        
-        transition: .2s ease-in-out;
-    }
-    
-    #profile-bottom h2 {
-        font-size: 1rem;
-        font-weight: 800;
-    }
-    
-    #profile-bottom h2 span {
-        font-size: 0.7rem;
-    }
-    
-    #profile-bottom p {
-        font-size: 0.5rem;
-        padding: 0px 5px;
-        margin: 5px 0px;
-    }
-    
-    #profile-top:hover ~ #profile-bottom  {
-        opacity: 1;
-        border-radius: 5%;
-        padding-top: 75px;
-        transform: translateY(40px);
-    }
-    
-    .team #lm-button {
-        padding: 0px 20px;
-        margin-top: 80px;
-        text-align: right;
-    }
-    
-    .team #lm-button a {
-        font-size: 0.9rem;
-    } */
-
 
     /* Portfolio Page */
     /* Pic Card goes here */
@@ -2869,8 +2714,6 @@ footer {
         margin: 0;
         margin-top: -50px;
         margin-left: -280px;
-        /* width: 600px; */
-        /* height: 600px; */
     }
 
     #pic-cardRight {
@@ -2897,9 +2740,6 @@ footer {
         margin: 0;
     }
 
-    #portfolio-main-left {
-        
-    }
 
     #portfolio-main-left h1 {
         font-size: 300%;
@@ -2909,10 +2749,6 @@ footer {
     #portfolio-main-left p {
         width: 90%;
         font-size: 100%;
-    }
-
-    #round-pic-card img {
-        margin-left: -350px;
     }
 
     .work {
@@ -2946,7 +2782,6 @@ footer {
     #webDev-right p {
         width: 100%;
         font-size: 90%;
-        /* line-height: 50px; */
     }
 
     #webDev-right #pCard1 {
@@ -2980,7 +2815,6 @@ footer {
     #graphDesign-left p {
         width: 100%;
         font-size: 90%;
-        /* line-height: 50px; */
     }
 
     #graphDesign-left #pCard1 {
@@ -3072,70 +2906,70 @@ footer {
     }
 
     #servicesCard {
-        width: 45%;
-        height: 300px;
+        border-radius: 20px;
+        width: 200px;
+        height: 390px;
     }
-
+    
     #servicesCardIcoBG {
-        width: 100%;
-        margin: 0;
-        margin-top: -100px;
-        margin-left: -50px;
+        height: 320px;
+        width: 340px;
+        margin-left: -150px;
+        margin-top: 0px;
+
+    }
+    
+    #servicesCard:hover > #servicesCardIcoBG {
+        transform: scale(0.4);
+        margin-top: -120px;
+        margin-left: -160px;
     }
     
     #servicesCardIcoBG img {
-        width: 40%;
-        margin: 0;
-        margin-top: 140px;
-        margin-left: 80px;
+        width: 30%;
+        margin-left: 180px;
     }
-
-    #servicesCard:hover #servicesCardIcoBG {
-        margin-top: -200px;
-        margin-left: -120px;
+    
+    #servicesCard:hover > #servicesCardIcoBG > img {
+        transform: scale(0.7);
+        margin-top: 100px;
     }
-
-    #servicesCard:hover #servicesCardIcoBG > img {
-        width: 20%;
-        margin-top: 220px;
-        margin-left: 140px;
-    }
-
-    #servicesCardHeading {
-        width: 80%;
-        font-size: 150%;
-        line-height: 30px;
-        margin-top: -50px;
-        margin-left: -175px;
-    }
-
+    
     #moreInfo {
-        margin: 0;
-        margin-left: auto;
-        padding: 40px 25px;
-        /* text-align: right; */
+        margin-left: 60px;
+        margin-top: 50px;
+        width: 60%;
     }
-
+    
     #moreInfo h1 {
-        width: 95%;
-        font-size: 120%;
-        line-height: 22px;
-        text-align: right;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 20px;
     }
     
     #moreInfo p {
-        font-size: 90%;
-        text-align: right justify;
-        line-height: 20px;
+        text-align: justify;
         margin: 10px 0px;
-        margin-top: 5px;
+        margin-bottom: 30px;
+        font-size: 0.9rem;
     }
-
+    
     #moreInfo a {
-        font-size: 90%;
-        padding: 2px 15px;
-        border: 2px solid #5D0492;
-        
+        color: #5D0492;
+        padding: 2px 10px;
+        border: 3px solid #5D0492;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 0.8rem;
+    }
+    
+    #servicesCardHeading {
+        width: 90%;
+        font-size: 1.3rem;
+        line-height: 25px;
+        top: 320px;
+        left: 10px;
     }
 }
 
@@ -3244,7 +3078,6 @@ footer {
         height: 260px;
         padding: 30px 30px;
         margin: 30px auto;
-
         background-position: -40px 135px;
     }
 
@@ -3768,37 +3601,42 @@ footer {
         width: 100%;
         padding: 40px 0px;
         margin: auto;
-        /* margin-top: -50px; */
     }
 
     #servicesCard {
         width: 100%;
-        /* height: 500px; */
+        height: 350px;
         margin: auto;
         margin-bottom: 40px;
-
     }
 
     #servicesCardIcoBG {
-        /* transform: scale(1); */
+        left: 110px;
+        top: -25px;
+    }
+
+    #servicesCardIcoBG img {
+        width: 40%;
+        margin-left: 100px;
+        margin-top: 80px;
     }
 
     #servicesCard:hover > #servicesCardIcoBG {
-        transform: scale(1);
-        /* margin-top: 170px; */
+        transform: scale(0.7);
+        margin-top: -120px;
+        margin-left: -270px;
     }
 
     #servicesCard:hover > #servicesCardIcoBG img {
-        transform: scale(0.7);
-        /* margin-top: 170px; */
+        transform: scale(0.5);
+        margin-top: 120px;
+        margin-left: 150px;
     }
 
-
     #servicesCardHeading {
-        width: 80%;
-        margin: 0;
-        margin-left: -170px;
-        margin-top: -50px;
+        width: 70%;
+        margin-left: 80px;
+        margin-top: -45px;
         font-size: 170%;
         line-height: 30px;
     }
@@ -3808,28 +3646,27 @@ footer {
         width: 65%;
         padding: 30px 50px;
         padding-left: 100px;
+        padding-top: 50px;
         margin-left: 00px;
     }
 
     #moreInfo h1 {
         margin-left: auto;
-        width: 90%;
-        font-size: 145%;
+        font-size: 1.4rem;
         line-height: 25px;
     }
     
     #moreInfo p {
         width: 100%;
-        font-size: 100%;
+        font-size: 1rem;
         line-height: 23px;
         margin: 10px 0px;
+        margin-bottom: 30px;
     }
     
     #moreInfo a {
-        /* width: 80%; */
-        font-size: 100%;
+        font-size: 1rem;
         margin: 0;
         text-align: left;
-        /* line-height: 25px; */
     }
 }
