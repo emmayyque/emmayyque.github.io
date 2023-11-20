@@ -638,6 +638,7 @@ footer {
 }
 
 .portfolio #row {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -796,10 +797,6 @@ footer {
 #graphDesign-left h1 {
     width: 60%;
     line-height: 70px;
-}
-
-#graphDesign-left #row {
-    justify-content: space-between;
 }
 
 #graphDesign-left #pCard1 {
@@ -1440,15 +1437,6 @@ footer {
 
 #contactUs-main-right {
     width: 20%;
-}
-
-.contactUs #round-pic-card {
-    width: 700px;
-    height: 700px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    margin-right: -400px;
 }
 
 .contactUs #round-pic-card img {
@@ -2161,6 +2149,70 @@ textarea:focus::placeholder {
 
     #oAbouts-right {
         width: 65%;
+    } 
+
+    /* Contact Us Page Styling goes here */
+    .contactUs span {
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    .contactUs h1 {
+        color: #FFFFFF;
+        font-size: 4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .contactUs-main {
+        padding: 45px 200px;
+    }
+
+    #contactUs-main-left {
+        /* color: #FFFFFF; */
+        width: 80%;
+        margin-top: -10px;
+    }
+
+    #contactUs-main-right {
+        width: 20%;
+    }
+
+    .contactUs #round-pic-card img {
+        height: 100%;
+        margin-left: -80px;
+    }
+
+    .contactUs form {
+        width: 70%;
+    }
+
+    .contactUs form input {
+        font-size: 1.2rem;
+    }
+
+    .contactUs form #name {
+        width: 44%;
+    }
+
+    .contactUs form #email {
+        width: 50%;
+    }
+
+    .contactUs form textarea {
+        font-size: 1.2rem;
+    }
+
+    textarea::placeholder {
+        position: absolute;
+        bottom: 5%;
+    }
+
+    .contactUs form button {
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        /* width: 30%; */
     }
 }
 
@@ -2818,6 +2870,65 @@ textarea:focus::placeholder {
 
     #oAbouts-right {
         width: 55%;
+    }
+
+    /* Contact Us Page Styling goes here */
+    .contactUs span {
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    .contactUs h1 {
+        font-size: 3rem;
+    }
+
+    .contactUs-main {
+        padding: 45px 100px;
+    }
+
+    #contactUs-main-left {
+        width: 80%;
+        margin-top: -10px;
+    }
+
+    #contactUs-main-right {
+        width: 20%;
+    }
+
+    .contactUs #round-pic-card img {
+        height: 100%;
+        margin-left: -80px;
+    }
+
+    .contactUs form {
+        width: 70%;
+    }
+
+    .contactUs form input {
+        font-size: 1rem;
+    }
+
+    .contactUs form #name {
+        width: 30%;
+    }
+
+    .contactUs form #email {
+        width: 50%;
+    }
+
+    .contactUs form textarea {
+        font-size: 1rem;
+    }
+
+    textarea::placeholder {
+        bottom: 5%;
+    }
+
+    .contactUs form button {
+        font-size: 1rem;
+        padding: 5px 0px;
+        /* width: 30%; */
     }
 }
 
@@ -3506,6 +3617,65 @@ textarea:focus::placeholder {
     #oAbouts-right {
         width: 50%;
     }
+
+    /* Contact Us Page Styling goes here */
+    .contactUs span {
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    .contactUs h1 {
+        font-size: 3rem;
+    }
+
+    .contactUs-main {
+        padding: 45px 50px;
+    }
+
+    #contactUs-main-left {
+        width: 80%;
+        margin-top: -10px;
+    }
+
+    #contactUs-main-right {
+        width: 20%;
+    }
+
+    .contactUs #round-pic-card img {
+        height: 100%;
+        margin-left: -80px;
+    }
+
+    .contactUs form {
+        width: 70%;
+    }
+
+    .contactUs form input {
+        font-size: 0.9rem;
+    }
+
+    .contactUs form #name {
+        width: 40%;
+    }
+
+    .contactUs form #email {
+        width: 50%;
+    }
+
+    .contactUs form textarea {
+        font-size: 0.9rem;
+    }
+
+    textarea::placeholder {
+        bottom: 5%;
+    }
+
+    .contactUs form button {
+        font-size: 0.9rem;
+        padding: 5px 0px;
+        /* width: 30%; */
+    }
 }
 
 /* For Mobile View */
@@ -3882,6 +4052,7 @@ textarea:focus::placeholder {
     /* Portfolio Main Styling goes here */
     .portfolio #row {
         width: 100%;
+        flex-direction: column;
     }
 
     .portfolio-main {
@@ -4164,8 +4335,8 @@ textarea:focus::placeholder {
     #servicesCardHeading {
         width: 75%;
         margin-left: 60px;
-        margin-top: -40-px;
-        font-size: 170%;
+        margin-top: -40px;
+        font-size: 1.7rem;
         line-height: 30px;
     }
 
@@ -4383,5 +4554,59 @@ textarea:focus::placeholder {
 
     #oAbouts-right {
         width: 65%;
+    }
+
+    /* Contact Us Page Styling goes here */
+    .contactUs h1 {
+        font-size: 2rem;
+    }
+
+    .contactUs-main {
+        padding: 45px 50px;
+    }
+
+    #contactUs-main-left {
+        width: 70%;
+        margin-top: -10px;
+    }
+
+    #contactUs-main-right {
+        width: 20%;
+    }
+
+    .contactUs #round-pic-card img {
+        height: 100%;
+        margin-left: -80px;
+    }
+
+    .contactUs form {
+        width: 70%;
+    }
+
+    .contactUs form input {
+        font-size: 0.8rem;
+    }
+
+    .contactUs form #name {
+        width: 80%;
+    }
+
+    .contactUs form #email {
+        width: 80%;
+    }
+
+    .contactUs form textarea {
+        font-size: 0.8rem;
+    }
+
+    textarea::placeholder {
+        bottom: 5%;
+    }
+
+    .contactUs form button {
+        font-size: 0.8rem;
+        border: 2px solid #FFFFFF;
+        padding: 3px 0px;
+        width: 60%;
     }
 }
