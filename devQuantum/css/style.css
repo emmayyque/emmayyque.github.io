@@ -115,11 +115,12 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #5D0492;
-    border-bottom: 5px solid #5D0492;
+    /* border-bottom: 4px solid #5D0492; */
 }
 
 .active {
     color:#5D0492;
+    /* font-weight: 800; */
     border-bottom: 4px solid #5D0492;
 }
 
@@ -4607,5 +4608,122 @@ textarea:focus::placeholder {
         border: 2px solid #FFFFFF;
         padding: 3px 0px;
         width: 60%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #round-pic-card {
+        width: 300px;
+        height: 300px;
+        /* margin-top: -290px; */
+        /* margin-left: 230px; */
+    }
+
+    #header-submenu:hover > #header-submenu-list {
+        display: block;
+        transform: translateX(-300px);
+    } 
+
+    /* Services Page Mobile View goes here */
+    #servicesCardHeading {
+        /* width: 75%; */
+        margin-left: 50px;
+        margin-top: -35px;
+        font-size: 1.6rem;
+        /* line-height: 30px; */
+    }
+
+    #moreInfo {
+        /* margin: 0; */
+        /* width: 65%; */
+        /* padding: 30px 50px; */
+        /* padding-left: 100px; */
+        padding-top: 60px;
+        margin-left: -15px;
+    }
+
+    #moreInfo h1 {
+        /* margin-left: auto; */
+        font-size: 1.3rem;
+        /* line-height: 25px; */
+    }
+    
+    #moreInfo p {
+        /* width: 100%; */
+        /* font-size: 1rem; */
+        line-height: 22px;
+        /* margin: 10px 0px; */
+        /* margin-bottom: 30px; */
+    }
+
+    /* Our Team Page Styling goes here */   
+    .profile1 {
+        padding: 20px 20px;
+        /* height: 450px; */
+    }
+    
+    .oTeam #profile1-card img { 
+        /* height: 100%; */
+        margin-left: 10px;
+    }
+    
+    .profile2 {
+        padding: 20px 20px;
+        /* height: 450px; */
+    }
+
+    .oTeam #profile2-card img { 
+        /* height: 100%; */
+        margin-left: -85px;
+    }
+
+    /* Abouts Page Styling goes here */
+    .abouts h2 {
+        font-size: 1.7rem;
+    }
+
+    .abouts p {
+        font-size: 0.85rem;
+        margin: 5px 0px;
+    }
+
+    .abouts ul li {
+        font-size: 0.85rem;
+        margin: 0;
+    }
+
+    .abouts-main {
+        padding: 20px 40px;
+    }
+
+    .oAbouts {
+        padding: 20px 30px;
+        /* height: 400px; */
+    }
+
+    #oAbouts-left{
+        width: 40%;
+    }
+
+    .abouts #oAbouts-card img { 
+        /* margin-top: -90px; */
+        margin-left: -110px;
+        /* height: 140%; */
+    }
+
+    #oAbouts-right {
+        width: 60%;
+    }
+
+    /* Contact Us Page Styling goes here */
+    .contactUs h1 {
+        font-size: 1.9rem;
+    }
+
+    .contactUs form button {
+        /* font-size: 0.8rem; */
+        /* border: 2px solid #FFFFFF; */
+        padding: 3px 0px;
+        width: 65%;
     }
 }
