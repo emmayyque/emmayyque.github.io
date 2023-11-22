@@ -21,7 +21,7 @@
     </head>
     <body>
         <!-- Top Navigation Bar -->
-        <header>
+        <header id="headerSec">
             <!-- Logo goes here -->
             <div id="header-left">
                 <a href="index.html"><img src="imgs/logo (white).png" alt="DevQuantum's Logo"></a>
@@ -58,7 +58,7 @@
         </header>
 
         <!-- Website Main Page -->
-        <main class="oServices">
+        <main class="oServices" id="mainSec">
             <section class="oServices-main">
                 <div id="oServices-main-left">
                     <h1>Our Services</h1>
@@ -87,7 +87,7 @@
                                 development solutions. Transcending
                                 convention through innovation
                                 web solutions.</p>
-                            <a href="#">Order Now</a>
+                            <a id="card1">Order Now</a>
                         </div>                        
                     </div>
                     <div id="servicesCard">
@@ -147,11 +147,26 @@
                         </div>                        
                     </div>
                 </div>
-            </section>            
+
+                <form id="orderForm">
+                    <i class="fa fa-close" id="closeBtn"></i>
+                    <label for="title">Project Title</label>
+                    <input type="text" name="title" placeholder="Write a short title of your project" required>
+                    <label for="description" >Project Description</label>
+                    <textarea name="description" rows="40" cols="20" placeholder="Write a brief description of your project" required></textarea>                    
+                    <p>
+                        <label for="budget">Budget</label>
+                        <input type="number" name="budget" required>
+                        <label for="budget">Rs.</label>
+                    </p>
+                    <button>Place Order</button>
+                </form>
+            </section>   
+            <script src="js/app.js"></script>         
         </main>
 
         <!-- Footer Area -->
-        <footer>
+        <footer id="footerSec">
             <div id="footer-top">
                 <div id="footer-top-left">
                     <a href="https://www.facebook.com/dev.quantum01/" target="_blank"><i class="fa fa-facebook"></i></a>
