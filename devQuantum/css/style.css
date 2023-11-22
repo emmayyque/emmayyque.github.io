@@ -4587,6 +4587,7 @@ textarea:focus::placeholder {
         width: 150px;
         height: 150px;
         border-radius: 0 0 30px 0;
+        box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.8);
         margin: 0;
         /* margin-left: -150px; */
     }
@@ -4638,6 +4639,7 @@ textarea:focus::placeholder {
         width: 150px;
         height: 150px;
         border-radius: 0 0 0 30px;
+        box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.8);
         margin: 0;
         /* margin-left: -65px; */
     }
@@ -4723,29 +4725,33 @@ textarea:focus::placeholder {
     }
 
     .oAbouts {
-        padding: 20px 40px;
-        height: 400px;
+        padding: 20px 0px;
+        padding-top: 0;
+        height: 500px;
+        flex-direction: column;
     }
 
     #oAbouts-left{
-        width: 30%;
+        width: 100%;
     }
 
     .abouts #oAbouts-card { 
-        width: 250px;
-        height: 445px;
-        border-radius: 80px;
-        margin-left: -150px;
+        width: 100%;
+        height: 150px;
+        border-radius: 0 0 30px 30px;
+        box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.5);
+        margin-left: 0px;
     }
 
     .abouts #oAbouts-card img { 
-        margin-top: -90px;
-        margin-left: -160px;
-        height: 140%;
+        margin-top: -230px;
+        margin-left: -80px;
+        height: 400%;
     }
 
     #oAbouts-right {
-        width: 65%;
+        width: 80%;
+        padding: 10px 0px;
     }
 
     /* Contact Us Page Styling goes here */
@@ -4803,6 +4809,69 @@ textarea:focus::placeholder {
     }
 }
 
+@media screen and (max-width: 386px) {
+    #header-submenu:hover > #header-submenu-list {
+        display: block;
+        transform: translateX(-300px);
+    } 
+
+    /* Services Page Mobile View goes here */
+    #servicesCardHeading {
+        width: 75%;
+        margin-left: 55px;
+        margin-top: -35px;
+        font-size: 1.5rem;
+        /* line-height: 30px; */
+    }
+
+    #moreInfo {
+        /* margin: 0; */
+        /* width: 65%; */
+        /* padding: 30px 50px; */
+        /* padding-left: 100px; */
+        padding-top: 60px;
+        margin-left: -15px;
+    }
+
+    #moreInfo h1 {
+        /* margin-left: auto; */
+        font-size: 1.3rem;
+        /* line-height: 25px; */
+    }
+    
+    #moreInfo p {
+        /* width: 100%; */
+        /* font-size: 1rem; */
+        line-height: 22px;
+        /* margin: 10px 0px; */
+        /* margin-bottom: 30px; */
+    }
+
+    /* Abouts Page Styling goes here */
+    .abouts h2 {
+        font-size: 1.7rem;
+    }
+
+    .abouts p {
+        font-size: 0.85rem;
+        margin: 5px 0px;
+    }
+
+    .abouts ul li {
+        font-size: 0.85rem;
+        margin: 0;
+    }
+
+    .abouts-main {
+        padding: 20px 40px;
+    }
+
+    .oAbouts {
+        padding-top: 0;
+        height: 440px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     #round-pic-card {
         width: 300px;
@@ -4814,6 +4883,15 @@ textarea:focus::placeholder {
     #header-submenu:hover > #header-submenu-list {
         display: block;
         transform: translateX(-300px);
+    } 
+
+    #header-submenu-list ul {
+        width: 210px;
+    }
+
+    #header-submenu:hover > #header-submenu-list {
+        display: block;
+        transform: translateX(-320px);
     } 
 
     /* Services Page Mobile View goes here */
@@ -4963,41 +5041,11 @@ textarea:focus::placeholder {
 
 
     /* Abouts Page Styling goes here */
-    .abouts h2 {
-        font-size: 1.7rem;
-    }
-
-    .abouts p {
-        font-size: 0.85rem;
-        margin: 5px 0px;
-    }
-
-    .abouts ul li {
-        font-size: 0.85rem;
-        margin: 0;
-    }
-
-    .abouts-main {
-        padding: 20px 40px;
-    }
-
     .oAbouts {
-        padding: 20px 30px;
-        /* height: 400px; */
-    }
-
-    #oAbouts-left{
-        width: 40%;
-    }
-
-    .abouts #oAbouts-card img { 
-        /* margin-top: -90px; */
-        margin-left: -110px;
-        /* height: 140%; */
-    }
-
-    #oAbouts-right {
-        width: 60%;
+        /* padding: 20px 0px; */
+        /* padding-top: 0; */
+        height: 430px;
+        /* flex-direction: column; */
     }
 
     /* Contact Us Page Styling goes here */
@@ -5021,10 +5069,76 @@ textarea:focus::placeholder {
         /* margin-left: 230px; */
     }
 
+    #header-submenu-list ul {
+        width: 190px;
+    }
+
     #header-submenu:hover > #header-submenu-list {
         display: block;
-        transform: translateX(-300px);
+        transform: translateX(-350px);
     } 
+
+    .home h3 {
+        /* width: 100%; */
+        padding: 0;
+    } 
+    
+    .home h4 {
+        font-size: 1rem;
+    } 
+    
+    .home h5 span {
+        font-size: 0.9rem;
+    }
+
+    .services {
+        padding: 20px 0px;
+    }
+
+    #services-up p {
+        width: 90%;
+        margin: 20px auto;
+        margin-bottom: 0;
+    }
+
+    #team-down {
+        padding: 30px 0;
+    }
+
+    #services-down #row #card  {
+        margin: 15px auto;
+    }
+
+    .team {
+        height: 1050px;
+    }
+
+    #profile {
+        padding: 0;
+    }
+
+    #profile-top {
+        height: 120px;
+        width: 120px;
+        border: 4px solid #FFFFFF;
+    }
+
+    #profile-bottom {
+        padding: 10px 0px;
+        height: 108px;
+        width: 160px;
+    }
+
+    #profile-top:hover {
+        transform: translateX(-80px);
+    }
+
+    #profile-top:hover ~ #profile-bottom  {
+        opacity: 1;
+        padding: 10px;
+        padding-left: 90px;
+        transform: translateX(-30px);
+    }
 
     /* Services Page Mobile View goes here */
     #servicesCardHeading {
@@ -5174,45 +5288,6 @@ textarea:focus::placeholder {
     
     #profile2-right {
         /* width: 25%; */
-    }
-
-
-    /* Abouts Page Styling goes here */
-    .abouts h2 {
-        font-size: 1.7rem;
-    }
-
-    .abouts p {
-        font-size: 0.85rem;
-        margin: 5px 0px;
-    }
-
-    .abouts ul li {
-        font-size: 0.85rem;
-        margin: 0;
-    }
-
-    .abouts-main {
-        padding: 20px 40px;
-    }
-
-    .oAbouts {
-        padding: 20px 30px;
-        /* height: 400px; */
-    }
-
-    #oAbouts-left{
-        width: 40%;
-    }
-
-    .abouts #oAbouts-card img { 
-        /* margin-top: -90px; */
-        margin-left: -110px;
-        /* height: 140%; */
-    }
-
-    #oAbouts-right {
-        width: 60%;
     }
 
     /* Contact Us Page Styling goes here */
