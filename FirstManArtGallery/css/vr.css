@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+#door {
+    background-image: transparent;
+    background-image: url('../imgs/artGallery.jpg');
+}
+
+#joystick-container {
+    background-color: rgb(255, 255, 255, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    padding: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+#joystick-up, #joystick-down,  #joystick-left, #joystick-right {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+#nav-menu {
+    background-color: rgb(0, 0, 0, 0.8);
+    border: 1px solid #000000;
+    border-radius: 15px;
+    position: fixed;
+    top: 5%;
+    left: 3%;
+    padding: 20px;
+}
+
+#nav-menu h1 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#btn-panel button {
+    color: #FFFFFF;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+    transition-property: color, background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+}
+
+#btn-panel button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+#review-tab {
+    color: #FFFFFF;
+    background-color: rgb(0, 0, 0, 0.8);
+    border: 1px solid #000000;
+    border-radius: 15px;
+    position: fixed;
+    top: 25%;
+    left: 38%;
+    padding: 20px;
+    display: none;
+}
+
+#close-btn {
+    /* text-align: right; */
+    margin: 0px auto;
+}
+
+#review-tab p {
+    margin: 15px 0px;
+}
+
+#review-tab span {
+    display: flex;
+    font-size: 1.2rem;
+}
+
+#review-tab h1 {
+    font-size: 1.4rem;
+}
+#review-tab h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#review-tab p i {
+    font-size: 1.2rem;
+}
+
+#review-tab form {
+    display: flex;
+    flex-direction: column;
+}
+
+#review-tab form input {
+    margin-top: 20px;
+    width: 40%;
+    align-self: center;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: 5px 20px;
+
+    transition: 0.1s ease-in-out;
+}
+
+#review-tab form input:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+#review-tab form textarea {
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 1.1rem;
+    resize: none;
+}
