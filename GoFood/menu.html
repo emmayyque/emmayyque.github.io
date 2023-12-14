@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoFood.com - Menu</title>
+    <!-- Add your CSS links here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" />
+    <!-- Add your custom styles or link to your existing stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="card.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <!-- Add header similar to the main HTML file -->
+    <header>
+        <div class="logo">
+            <img src="images/isolated_hamburger_with_splash_ink_background.jpg" alt="Your Restaurant Logo" />
+            <h1>GoFood</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li> <!-- Updated link to point to menu.html -->
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+          
+        <!-- Add your menu content here -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <br /><br /><br />
+
+            <div class="card-container">
+                <!-- Menu Item 1 -->
+                <div class="card">
+                    <img src="/images/Alferdo Pasta" alt="Classic Burger" />
+                    <h3><strong>Classic Burger</strong></h3>
+                    <p>
+                        Juicy beef patty topped with fresh lettuce, tomatoes, and cheese.
+                    </p>
+                    <p class="price">$9.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="card">
+                    <img src="/images/flaming wings" alt="Margherita Pizza" />
+                    <h3><strong>Margherita Pizza</strong></h3>
+                    <p>Classic pizza with tomato sauce, mozzarella, and fresh basil.</p>
+                    <p class="price">$11.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="card">
+                    <img src="/images/Oven baked wings.webp" alt="Sushi Platter" />
+                    <h3><strong>Sushi Platter</strong></h3>
+                    <p>Fresh and delicious assortment of sushi rolls and sashimi.</p>
+                    <p class="price">$14.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 4 -->
+                <div class="card">
+                    <img src="/images/fresh-produce.jpg" alt="Creamy Pasta" />
+                    <h3><strong>Creamy Pasta</strong></h3>
+                    <p>Al dente pasta in a rich and creamy Alfredo sauce.</p>
+                    <p class="price">$12.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 5 -->
+                <div class="card">
+                    <img src="/images/margherita-pizza.jpg" alt="Grilled Sandwich" />
+                    <h3><strong>Grilled Sandwich</strong></h3>
+                    <p>
+                        Toasted sandwich with layers of grilled vegetables and cheese.
+                    </p>
+                    <p class="price">$8.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 6 -->
+                <div class="card">
+                    <img src="/images/delicious-burger.jpg" alt="Berry Smoothie" />
+                    <h3><strong>Berry Smoothie</strong></h3>
+                    <p>Refreshing smoothie made with a blend of mixed berries.</p>
+                    <p class="price">$5.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 7 -->
+                <div class="card">
+                    <img src="/images/sushi-platter.jpg" alt="Taco Trio" />
+                    <h3><strong>Taco Trio</strong></h3>
+                    <p>Three flavorful tacos with a variety of tasty fillings.</p>
+                    <p class="price">$10.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 8 -->
+                <div class="card">
+                    <img src="/images/seafood-dish.webp" alt="Vanilla Ice Cream" />
+                    <h3><strong>Vanilla Ice Cream</strong></h3>
+                    <p>Classic vanilla ice cream served in a crispy waffle cone.</p>
+                    <p class="price">$6.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+                <!-- Menu Item 9 -->
+                <div class="card">
+                    <img src="/images/pexels-valeria-boltneva-1639565.jpg" alt="Spicy Ramen" />
+                    <h3><strong>Spicy Ramen</strong></h3>
+                    <p>
+                        Japanese ramen with a spicy broth, noodles, and assorted toppings.
+                    </p>
+                    <p class="price">$13.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 10 -->
+                <div class="card">
+                    <img src="/images/seafood-dish.webp" alt="Chocolate Sundae" />
+                    <h3><strong>Chocolate Sundae</strong></h3>
+                    <p>Indulgent chocolate sundae with whipped cream and nuts.</p>
+                    <p class="price">$7.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 11 -->
+                <div class="card">
+                    <img src="/images/dessert-selection.jpg" alt="Caesar Salad" />
+                    <h3><strong>Caesar Salad</strong></h3>
+                    <p>
+                        Classic Caesar salad with romaine lettuce, croutons, and parmesan.
+                    </p>
+                    <p class="price">$9.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 12 -->
+                <div class="card">
+                    <img src="/images/pexels-robin-stickel-70497.jpg" alt="Grilled Steak" />
+                    <h3><strong>Grilled Steak</strong></h3>
+                    <p>Juicy grilled steak served with garlic butter and herbs.</p>
+                    <p class="price">$16.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 13 -->
+                <div class="card">
+                    <img src="/images/pexels-marco-fischer-115740.jpg" alt="Tomato Soup" />
+                    <h3><strong>Tomato Soup</strong></h3>
+                    <p>Homemade tomato soup with basil and a touch of cream.</p>
+                    <p class="price">$6.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 14 -->
+                <div class="card">
+                    <img src="/images/cozy-restaurant.jpg" alt="Chicken Wings" />
+                    <h3><strong>Chicken Wings</strong></h3>
+                    <p>
+                        Spicy and crispy chicken wings served with your choice of sauce.
+                    </p>
+                    <p class="price">$11.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 15 -->
+                <div class="card">
+                    <img src="/images/Oven baked wings.webp" alt="Iced Coffee" />
+                    <h3><strong>Iced Coffee</strong></h3>
+                    <p>Refreshing iced coffee with a hint of vanilla and cream.</p>
+                    <p class="price">$4.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <!-- Menu Item 16 -->
+                <div class="card">
+                    <img src="/images/pexels-valeria-boltneva-1639565.jpg" alt="Assorted Sweets" />
+                    <h3><strong>Assorted Sweets</strong></h3>
+                    <p>A delightful assortment of sweet treats for dessert lovers.</p>
+                    <p class="price">$15.99</p>
+                    <button class="order-now-btn">Order Now</button>
+                    <button class="add-to-cart-btn" onclick="addToCart()">Show More
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <h2>About Us</h2>
+    <section class="featured-section">
+        <div class="two-columns">
+            <div class="text-column">
+                <header>
+                    <div class="logo">
+                        <img src="images/isolated_hamburger_with_splash_ink_background.jpg"
+                            alt="Your Restaurant Logo" />
+                        <h1>GoFood</h1>
+                    </div>
+                </header>
+                <p>
+                    Welcome to GoFood! We take pride in offering a delightful dining experience with our exquisite range
+                    of dishes. At Kreiger-Dickens, our commitment is to serve you with the finest quality ingredients
+                    and a
+                    passion for excellent food.
+                </p>
+            </div>
+            <div class="image-column">
+                <div class="image-gallery-container">
+                    <img
+                    src="/images/restaurant-interior.jpg"
+                      alt="Gallery Image 1 - Visual representation of our culinary offerings"  style="width: 30%;"
+                    />
+                    <img
+                    src="/images/chef-preparing-food.jpg"
+                      alt="Gallery Image 2 - Explore the variety in our menu" style="width: 30%;"
+                    />
+    
+                    <img
+                    src="/images/dessert-selection.jpg"
+    
+                      alt="Gallery Image 3 - Enjoy a delightful dining experience" style="width: 30%;"
+                    />
+                    <img
+                    src="/images/fresh-produce.jpg"
+                      alt="Gallery Image 4 - Discover our special offers" style="width: 30%;"
+                    />
+                    <img
+                    src="/images/seafood-dish.webp"
+                      alt="Gallery Image 5 - Exciting pizza deals" style="width: 30%;"
+                    />
+                    <img
+                    src="/images/cozy-restaurant.jpg"
+                      alt="Gallery Image 6 - Exclusive meal promotions" style="width: 30%;"
+                    />
+                  </div>
+            </div>
+            <div class="contact-info">
+                <strong>Contact Information:</strong><br /><br />
+                <ul>
+                    <li><strong>EIN:</strong> 73-6360188</li>
+                    <li>
+                        <strong>Address:</strong> 22 Kulamanu Street, Honolulu, HI, 96816, United States
+                    </li>
+                    <li><strong>Phone:</strong> +1 202-834-4875</li>
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:info@caspeerr.com">info@caspeerr.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <footer>
+        <div class="footer-nav">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a> <!-- Updated link to point to menu.html -->
+                <a href="aboutus.html">About Us</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            <div class="social-icons">
+                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2023 Your Restaurant Name</p>
+    </footer>
+    <!-- Add this div at the end of your body tag -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-details">
+                <div class="modal-text">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <p id="modalPrice"></p>
+                    <button class="order-now-btn">Order Now</button>
+                </div>
+                <img id="modalImage" src="" alt="Item Image">
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,677 @@
+
+/* Base styles for smaller screens */
+@media (min-width: 768px) {
+  /* Media query styles for tablets and larger screens */
+}
+
+@media (min-width: 1024px) {
+  /* Media query styles for desktops and larger screens */
+}
+/* Add this media query for smaller screens (adjust the max-width as needed) */
+@media (max-width: 767px) {
+.overlay {
+  text-align: center;
+  top: 0; /* Adjust the top position for better placement on smaller screens */
+  transform: translate(0, 0); /* Reset the translation */
+}
+
+.overlay h2 {
+  font-size: 1.8em; /* Adjust font size for smaller screens */
+  margin: 10px 0;
+}
+
+.overlay .subtitle {
+  font-size: 1.5em; /* Adjust font size for smaller screens */
+  margin-bottom: 10px;
+}
+
+.order-now-btn {
+  font-size: 1em; /* Adjust font size for smaller screens */
+}
+}
+
+
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Set text color to white for better visibility on dark background */
+  background-color: #222; /* Dark background color */
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+header {
+  background-color: #111; /* Darken the header background */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo h1 {
+  color: #ff5200; /* Set logo text color to orange */
+}
+
+header .logo img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #ff5200;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav li a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+header nav li a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+.hero-banner {
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 800px; /* Set a fixed height for the hero-banner */
+  position: relative;
+  overflow: hidden;
+  background-image: url("/images/enlarge_111111111111.jpg"); /* Replace with your image URL */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-banner .content {
+  flex-grow: 1;
+}
+
+.hero-banner .content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero-banner .content p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.hero-banner .content button {
+  background-color: #ff5200;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 25%;
+  background-color: #272727;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card button {
+  background-color: #ff5200;
+  color: #fff;
+  display: block;
+  width: auto; /* Remove the width to allow the button to adjust based on content */
+  padding: 8px 15px; /* Adjust the padding to make it smaller */
+  margin-top: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card .order-now-btn {
+  background-color: #28a745; /* Bootstrap success color */
+  color: #fff;
+}
+
+.card .order-now-btn:hover {
+  background-color: #e04100; /* Darker shade on hover */
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #777;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.card .price {
+  font-weight: bold;
+  color: #ff5200;
+  float: right;
+  text-align: right;
+}
+
+#about-us {
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+#about-us p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+#locations {
+  padding: 20px;
+}
+
+#contact {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  border-bottom: 2px solid #ff5200;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#order-now {
+  text-align: center;
+  margin-top: 200px;
+  position: relative;
+  z-index: 1; /* Ensure the button stays above the hero-banner */
+}
+
+#order-now button {
+  background-color: #ff5200;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ... Previous CSS Code ... */
+
+.featured-section {
+  padding: 20px;
+  font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+  font-weight: var(--e-global-typography-primary-font-weight);
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-column {
+  flex-basis: 40%;
+  text-align: center; /* Center the text within the column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-column h2 {
+  color: #ddd;
+  border-bottom: 2px solid #ff5200;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.image-column {
+  flex-basis: 50%;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#about-us {
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  color: #ddd;
+  border-radius: 8px;
+}
+
+#about-us h2 {
+  text-align: center;
+  color: #ddd;
+  border-bottom: 2px solid #ff5200;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info strong {
+  color: #ffdb58;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 12px;
+  color: #eee;
+}
+
+.contact-info a {
+  color: #ffdb58;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+/* Add this CSS to your existing stylesheet or in a new one */
+.image-section {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.image-container img {
+  width: 100%; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.overlay h2 {
+  font-size: 2.5em; /* Increase font size */
+  margin: 10px 0;
+  font-weight: bold; /* Add bold font weight */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow */
+  color: #fff;
+}
+
+.overlay .subtitle {
+  font-size: 1.8em; /* Increase font size */
+  margin-bottom: 20px;
+  font-style: italic; /* Add italic font style */
+  color: #fff;
+}
+
+.order-now-btn {
+  background-color: #ff5200;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2em; /* Adjust font size */
+}
+
+.order-now-btn:hover {
+  background-color: #e04100; /* Darker shade on hover */
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #333; /* Dark background color for the footer */
+  color: #fff; /* Text color for the footer */
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Align the navbar to the right */
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+  color: #ff5200; /* Hover color for links */
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 1.5em;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #ff5200; /* Hover color for social icons */
+}
+.social-media {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  color: #ff5200; /* Hover color for social media links */
+}
+.image-gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.gallery-image {
+  
+  width: (30% - 30px);
+  margin-right: 2%; /* Adjust the percentage as needed for equal spacing */
+  margin-bottom: 10px; /* Optional: Add margin at the bottom of each row */
+  box-sizing: border-box;
+  padding-left: 100px;
+}
+
+.gallery-image:last-child {
+  margin-right: 0; /* Remove margin from the last image in each row */
+}
+/* Style for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+/* Style for the modal content */
+.modal-content {
+   background-color: #333;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+}
+
+/* Style for the close button */
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Style for the item image */
+#modalImage {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Style for the item title */
+#modalTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style for the item description */
+#modalDescription {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Style for the item price */
+#modalPrice {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Add animation for modal opening and closing */
+.modal-content {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/* Add this CSS in your existing stylesheet or create a new one */
+.modal-details {
+  display: flex;
+}
+
+.modal-text {
+  flex: 1; /* This will make the text take up the available space */
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+#modalImage {
+  border-radius: 10%;
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 300px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
+
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px; /* Adjust the height as needed */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+section.about-section {
+  padding: 20px;
+  text-align: center;
+}
+
+section.about-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+section.gallery-section {
+  text-align: center;
+}
+
+section.gallery-section img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#locations {
+  margin-top: 20px;
+}
+
+#locations ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#locations li {
+  margin-bottom: 10px;
+}
+
+#locations li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+#locations li p {
+  margin-top: 5px;
+  color: #555;
+}
+p {
+  color: #ddd;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+ /* Dark background color for the blog section */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+p strong {
+  color: #ff5200; /* Accent color for strong text */
+}
+
+p em {
+  font-style: italic;
+  color: #7da2a7; /* Accent color for italic text */
+}
+
+p span.highlight {
+  background-color: #ff5200; /* Highlight color for specific spans */
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
