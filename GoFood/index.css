@@ -114,7 +114,7 @@ main {
   height: 800px; /* Set a fixed height for the hero-banner */
   position: relative;
   overflow: hidden;
-  background-image: url("/images/enlarge_111111111111.jpg"); /* Replace with your image URL */
+  background-image: url("images/enlarge_111111111111.jpg"); /* Replace with your image URL */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
