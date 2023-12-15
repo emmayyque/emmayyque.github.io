@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+<style>
+    * {
+        text-decoration: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #1a1814;
+    }
+
+    .wrapper {
+        position: relative;
+        width: 700px;
+        height: 400px;
+        background-color: #343a40;
+        border: 2px solid none;
+        overflow: hidden;
+        box-shadow: 0 0 25px #6c757d;
+    }
+
+    .wrapper .form-box {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wrapper .form-box.login {
+        left: 0;
+        padding: 0 60px 0 40px;
+    }
+
+    .wrapper .form-box.login .animation {
+        transform: translateX(0);
+        transition: 3s ease;
+    }
+
+    .wrapper.active .form-box.login .animation {
+        transform: translateX(-120%);
+        opacity: 0;
+        filter: blur(10px);
+        transition-delay: calc(.1s * var(--i));
+    }
+
+    .wrapper .form-box.register {
+        right: 0;
+        padding: 0 40px 0 60px;
+    }
+
+    .wrapper .form-box.register .animation {
+        transform: translateX(120%);
+        opacity: 0;
+        filter: blur(10px);
+        transition: .7s ease;
+    }
+
+    .wrapper.active .form-box.register .animation {
+        transform: translateX(0);
+        opacity: 1;
+        filter: blur(0);
+        transition-delay: calc(.1s * var(--i));
+    }
+
+    .form-box h2 {
+        font-size: 32px;
+        color: #cda45e;
+        text-align: center;
+    }
+
+    .form-box .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 25px 0;
+        background-color: #495057;
+    }
+
+    .input-box input {
+        color: white;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        
+        transition: .5s;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .input-box input:focus,
+    .input-box input:valid {
+        border-bottom-color: #6c757d;
+    }
+
+    .input-box label {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #cda45e;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+    .input-box input:focus~label,
+    .input-box input:valid~label {
+        top: -5px;
+        color: #6c757d;
+    }
+
+    .input-box ion-icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        color: white;
+        font-size: 18px;
+        transform: translateY(-50%);
+    }
+
+    .btn {
+        position: relative;
+        width: 100%;
+        height: 45px;
+        background: transparent;
+        border: 2px solid #6c757d;
+        outline: none;
+        border-radius: 40px;
+        cursor: pointer;
+        color: white;
+        font-weight: 600;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .btn::before {
+        content: '';
+        position: absolute;
+        top: 100;
+        left: 0;
+        width: 100%;
+        height: 300%;
+        background: linear-gradient(#1a1814, #cda45e, #1a1814);
+        z-index: -2;
+        transition: .5s;
+    }
+
+    .btn:hover::before {
+        top: 0;
+    }
+
+    .form-box .logrge-link {
+        font-size: 14.5px;
+        color: white;
+        text-align: center;
+        margin: 20px 0 10px;
+    }
+
+    .logrge-link p a {
+        color: #1CD21A;
+        text-decoration: none;
+        font-weight: 600;
+        color: white;
+    }
+
+    .logrge-link p a :hover {
+        text-decoration: underline;
+    }
+
+    .wrapper .info-text {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wrapper .info-text.login {
+        right: 0px;
+        text-align: right;
+        padding: 0 40px 60px 150px;
+    }
+
+    .wrapper .info-text.login .animation {
+        transform: translateX(0);
+        transition: 3s ease;
+    }
+
+    .wrapper.active .info-text.login .animation {
+        transform: translateX(-140%);
+        opacity: 0;
+        filter: blur(10px);
+        transition-delay: calc(.1s * var(--i));
+    }
+
+    .wrapper .info-text.register {
+        left: 0;
+        text-align: right;
+        padding: 0 150px 60px 40px;
+        pointer-events: none;
+    }
+
+    .wrapper .info-text.register .animation {
+        transform: translateX(-150%);
+        opacity: 0;
+        filter: blur(10px;)
+        transition: .3s ease;
+    }
+
+    .wrapper.active .info-text.register .animation {
+        transform: translateX(0);
+        opacity: 1;
+        filter: blur(10px;)
+    }
+
+    .info-text h2 {
+        font-size: 36px;
+        color: #cda45e;
+        line-height: 1.3;
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .info-text p {
+        font-size: 10px;
+        color: #cda45e;
+        text-align: right;
+    }
+
+    .wrapper .bg-animate {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        width: 850px;
+        height: 600px;
+        background: linear-gradient(45deg, #1a1814, #cda45e);
+        border-bottom: 3px solid #6c757d;
+        transform: rotate(10deg) skewY(40deg);
+        transform-origin: bottom right;
+        transition: 1s ease;
+    }
+
+    .wrapper.active .bg-animate {
+        transform: rotate(0) skewY(0);
+        transition-delay: .5s;
+    }
+
+    .wrapper .bg-animate2 {
+        position: absolute;
+        top: 100%;
+        left: 250px;
+        width: 850px;
+        height: 700px;
+        background: #1a1814;
+        border-top: 3px solid #6c757d;
+        transform: rotate(0) skewY(0);
+        transform-origin: bottom left;
+    }
+
+    .wrapper.active .bg-animate2 {
+        transform: rotate(-11deg) skewY(-41deg);
+        transition-delay: 1.2s;
+    }
+</style>
+
+<div class="wrapper">
+    <span class="bg-animate"></span>
+    <span class="bg-animate2"></span>
+    <div class="form-box login">
+        <h2 class="animation" style="--i:0;">Login</h2>
+        <form action="#">
+            <div class="input-box animation" style="--i:1;">
+                <input id="username" type="text" required>
+                <label style="color: white">Username</label>
+                <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div class="input-box animation" style="--i:2;">
+                <input id="password-user" type="password" required>
+                <label style="color: white">Password</label>
+                <ion-icon name="lock-closed"></ion-icon>
+            </div>
+            <button type="submit" class="btn animation" style="--i:3;" onClick="login()">Login</button>
+
+            <div class="logreg-link animation" style="--i:4;">
+                <p style="color: white;">Don't have an account<a href="#" class="register-link" style="color: #cda45e; margin-left: 5px;">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="info-text login">
+        <h2 class="animation" style="color: white; --i:0;">Welcome Back !</h2>
+        <p class="animation" style="color: white;">Loruoiofuh gjhvguig vgfujv va hsgy j hgjh jgui hii</p>
+    </div>
+
+    <div class="form-box register">
+        <h2 class="animation" style="--i:17;">Sign Up</h2>
+        <form action="#" onsubmit="return signUp()">
+            <div class="input-box animation" style="--i:18;">
+                <input type="text" required>
+                <label style="color: white">Username</label>
+                <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div class="input-box animation" style="--i:19;">
+                <input type="text" required>
+                <label style="color: white">Email</label>
+                <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div class="input-box animation" style="--i:20;">
+                <input type="password" required>
+                <label style="color: white">Password</label>
+                <ion-icon name="lock-closed"></ion-icon>
+            </div>
+
+            <button type="submit" class="btn animation" style="--i:21">Sign Up</button>
+            <div class="logrge-link animation" style="--i:22">
+                <p>Already have an account<a href="#" class="login-link" style="margin-left: 5px; color: #cda45e;">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="info-text register">
+        <h2 style="color: white" class="animation">Welcome Back!</h2>
+        <p style="color: white" class="animation">Loruoiofuh gjhvguig vgfujv va hsgy j hgjh jgui hii</p>
+    </div>
+
+    <script>
+        const wrapper = document.querySelector('.wrapper');
+        const registerLink = document.querySelector('.register-link');
+        const loginLink = document.querySelector('.login-link');
+        registerLink.onclick = () => {
+            wrapper.classList.add('active');
+        }
+        loginLink.onclick = () => {
+            wrapper.classList.remove('active');
+        }
+    </script>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password-user").value;
+            if (username == "bakers" && password == "123") {
+                alert("login successfully");
+            } else {
+                alert("invalid information");
+                return;
+            }
+        }
+    </script>
+
+    <script>
+        function signUp() {
+            alert("Sign up successful! You can now log in.");
+            return false;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FQAS</title>
+</head>
+
+<body>
+	<style>
+		body
+		{
+			background-color: grey;
+			background-repeat:no-repeat;
+			background-attachment: fixed;
+			background-size: 100%;
+		}
+		*{
+			text-decoration: none;
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           		font-style: italic;
+			background-color:grey;
+		}
+		section{
+			background-color: grey;
+			min-height:100vh;
+			width:80%;
+			margin:0 auto;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+			
+		}
+		.title{
+			font-size:3rem;
+			margin: 2rem 0rem;
+			text-align: center;
+		}
+		.faq{
+			max-width: 700px;
+			margin-top: 2rem;
+			padding-bottom:1rem;
+			cursor:pointer;
+			margin-left:50px;
+			
+		}
+		.question{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.answer{
+			max-height: 0;
+			overflow: hidden;
+			transition:  max-height 1.4s ease-in;
+		}
+		.faq.active .answer{
+			max-height: 300px;
+		}
+	</style>
+	<section>
+	<h2 class="title">FQAS</h2>
+	<div class="faq">
+	<div class="question">
+		<h3>Services We Provide?</h3>
+		
+		<svg width="15" height="10" viewBox="0 0 42 25">
+			<path d="M3 3L21 21L39 3"  stroke="green" stroke-width="7"  stroke-linecap="round" />
+		</svg>
+		</div>
+		<div class="answer">
+			<p>Our bakery specializes in creating cakes for various events, along with a delectable assortment of cookies, brownies, desserts, and cupcakes.</p>
+		</div>
+	</div>
+		<div class="faq">
+	<div class="question">
+		<h3>What's the smallest order you can make?</h3>
+		
+		<svg width="15" height="10" viewBox="0 0 42 25">
+			<path d="M3 3L21 21L39 3"  stroke="green" stroke-width="7"  stroke-linecap="round" />
+		</svg>
+		</div>
+		<div class="answer">
+			<p>Our minimum order requirement is Rs 1000. Feel free to let us know if you have any questions or if there's anything else we can assist you with!"</p>
+		</div>
+	</div>
+		<div class="faq">
+	<div class="question">
+		<h3>How do we pay for your order?</h3>
+		
+		<svg width="15" height="10" viewBox="0 0 42 25">
+			<path d="M3 3L21 21L39 3"  stroke="green" stroke-width="7"  stroke-linecap="round" />
+		</svg>
+		</div>
+		<div class="answer">
+			<p>We offer multiple payment options for your convenience. You can pay for your order using cash, credit/debit cards, or through our online payment system. Please let us know your preferred method, and we'll ensure a smooth transaction for you.</p>
+		</div>
+	</div>
+		<div class="faq">
+	<div class="question">
+		<h3>Where can we view range of Customized Cakes?</h3>
+		
+		<svg width="15" height="10" viewBox="0 0 42 25">
+			<path d="M3 3L21 21L39 3"  stroke="green" stroke-width="7"  stroke-linecap="round" />
+		</svg>
+		</div>
+		<div class="answer">
+			<p>Go to our customize cakes section for our cretions.Additionally, feel free to visit our bakery at 6th road Rawelpindi pakistan to discuss your preferences and see our portfolio in person</p>
+		</div>
+	</div>
+		<div class="faq">
+	<div class="question">
+		<h3>What if we order a Wedding cake?</h3>
+		
+		<svg width="15" height="10" viewBox="0 0 42 25">
+			<path d="M3 3L21 21L39 3"  stroke="green" stroke-width="7"  stroke-linecap="round" />
+		</svg>
+		</div>
+		<div class="answer">
+			<p>When you order a wedding cake, we offer stress-free delivery. Our team will coordinate a convenient delivery time, ensuring your cake arrives in pristine condition at your venue or home. Delivery fees may apply, based on distance and complexity. During the consultation, we'll discuss options, fees, and any setup instructions, aiming to make the process seamless. Our goal is to let you focus on enjoying your wedding day, while we handle the delivery of a beautiful, delicious cake to your doorstep.</p>
+		</div>
+	</div>
+		<div class="faq">
+	<div class="question">
+		<h3>Where can we talk to Sugar Petal Pastries?</h3>
+		
+		<svg width="15" height="10" viewBox="0 0 42 25">
+
+			<path d="M3 3L21 21L39 3"  stroke="green" stroke-width="7"  stroke-linecap="round" />
+		</svg>
+		</div>
+		<div class="answer">
+			<p>We love communicating with our customers. Please see our number on website page.We look forward to hearing from you and assisting with any inquiries or orders you may have!</p>
+		</div>
+	</div>
+		</section>
+	<script>
+		const faqs= document.querySelectorAll(".faq");
+		faqs.forEach(faq =>{
+			faq.addEventListener("click", () => {
+				faq.classList.toggle("active");
+			})
+		})
+	</script>
+</body>
+</html>
