@@ -5,16 +5,10 @@ const btnNext = document.getElementById("btnNext").addEventListener("click", sli
 let counter = 2;
 
 function slider (e) {
-    // alert(e.srcElement.id);
-    // alert(this.id);
-    // console.log(e.srcElement.id + "id here");
 
     let slide1 = document.getElementById("slide1");
     let slide2 = document.getElementById("slide2");
     let slide3 = document.getElementById("slide3");
-
-    
-   
 
     if (this.id== "btnNext") {
         if (counter == 1) {
