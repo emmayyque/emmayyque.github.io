@@ -115,12 +115,10 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #5D0492;
-    /* border-bottom: 4px solid #5D0492; */
 }
 
 .active {
     color:#5D0492;
-    /* font-weight: 800; */
     border-bottom: 4px solid #5D0492;
 }
 
@@ -450,7 +448,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     margin: auto;
-    /* height: 600px; */
 }
 
 
@@ -503,8 +500,8 @@ nav ul li a:hover {
 
 #review p {
     color: rgb(0, 0, 0, 0.5);
-    font-size: 120%;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
     font-style: italic;
     text-align: center;
     margin-top: 20px;
@@ -864,7 +861,6 @@ footer {
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
     transition-delay: 0.1;
-    
 }
 
 #graphDesign-left #pCard1 a:hover {
@@ -1155,8 +1151,8 @@ footer {
     width: 80vh;
     border-radius: 20px;
     padding: 20px;
-    top: 30%;
-    left: 35%;
+    top: 14%;
+    left: 28%;
     box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.7);
     display: none;
 }
@@ -1527,7 +1523,6 @@ footer {
 .contactUs form {
     background-image: linear-gradient(to left, #001C44, #0C44A1);
     width: 50%;
-    /* border: 2px solid #FFFFFF; */
     border-radius: 10px;
     padding: 20px;
     margin: 20px 0px;
@@ -1924,10 +1919,6 @@ textarea:focus::placeholder {
     }
     
     /* Services Page Styling goes here */
-    .oServices #row {
-        
-    }
-
     .oServices {
         color: #FFFFFF;
         overflow: hidden;
@@ -2076,24 +2067,8 @@ textarea:focus::placeholder {
         font-size: 1.3rem;
     }
 
-    .oTeam-main {
-        /* padding: 45px 200px;
-        align-items: center;
-        overflow: hidden; */
-    }
-
-    #oTeam-main-left {
-        /* color: #FFFFFF;
-        width: 80%;
-        margin-top: -100px; */
-    }
-
     #oTeam-main-left p {
-        /* width: 70%;   */
         font-size: 1.4rem;
-        /* font-weight: 400; */
-        /* margin: 10px 0px; */
-        /* text-align: justify; */
     }
 
     #oTeam-main-right {
@@ -2250,7 +2225,6 @@ textarea:focus::placeholder {
     }
 
     #contactUs-main-left {
-        /* color: #FFFFFF; */
         width: 80%;
         margin-top: -10px;
     }
@@ -2292,7 +2266,6 @@ textarea:focus::placeholder {
     .contactUs form button {
         color: #FFFFFF;
         font-size: 1.2rem;
-        /* width: 30%; */
     }
 }
 
@@ -2495,9 +2468,6 @@ textarea:focus::placeholder {
     #review p {
         color: rgb(0, 0, 0, 0.5);
         font-size: 1.1rem;
-        /* font-weight: 600; */
-        /* font-style: italic; */
-        /* text-align: center; */
         margin-top: 20px;
     }
     
@@ -2525,8 +2495,6 @@ textarea:focus::placeholder {
     #testimonials-down button i {
         text-align: center;
         font-size:  800%;
-        /* color: #FFFFFF; */
-        /* margin: auto; */
     }
 
 
@@ -2718,7 +2686,6 @@ textarea:focus::placeholder {
 
     #oServices-main-left {
         width: 70%;
-        /* margin: 0; */
     }
 
     #oServices-main-left h1 {
@@ -2809,16 +2776,10 @@ textarea:focus::placeholder {
 
     .oTeam-main {
         padding: 45px 100px;
-        /* align-items: center;
-        overflow: hidden; */
     }
 
     #oTeam-main-left p {
-        /* width: 70%;   */
         font-size: 1rem;
-        /* font-weight: 400; */
-        /* margin: 10px 0px; */
-        /* text-align: justify; */
     }
 
     .oTeam #round-pic-card img {
@@ -3008,13 +2969,11 @@ textarea:focus::placeholder {
     .contactUs form button {
         font-size: 1rem;
         padding: 5px 0px;
-        /* width: 30%; */
     }
 }
 
 
 /* Table View Settings goes here*/
-
 @media screen and (max-width: 768px) {
     #round-pic-card {
         width: 400px;
@@ -3200,8 +3159,6 @@ textarea:focus::placeholder {
     #testimonials-down button i {
         text-align: center;
         font-size:  800%;
-        /* color: #FFFFFF; */
-        /* margin: auto; */
     }
     
     #rating-stars {
@@ -3421,7 +3378,6 @@ textarea:focus::placeholder {
 
     #oServices-main-left {
         width: 70%;
-        /* margin: 0; */
     }
 
     #oServices-main-left h1 {
@@ -3550,7 +3506,6 @@ textarea:focus::placeholder {
 
     .oTeam-main {
         padding: 20px 40px;
-        /* padding-bottom: 40px; */
         margin: 0;
     }
 
@@ -3754,7 +3709,6 @@ textarea:focus::placeholder {
     .contactUs form button {
         font-size: 0.9rem;
         padding: 5px 0px;
-        /* width: 30%; */
     }
 }
 
@@ -3763,8 +3717,6 @@ textarea:focus::placeholder {
     #round-pic-card {
         width: 300px;
         height: 300px;
-        /* margin-top: -290px; */
-        /* margin-left: 230px; */
     }
 
     header {
@@ -4021,12 +3973,6 @@ textarea:focus::placeholder {
     /* Testimonials Styling */
     .testimonials {
         padding: 40px 20px;
-        /* background-image: linear-gradient(to right, #2E004F, #5D0492); */
-        /* text-align: center; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* margin: auto; */
-        /* height: 600px; */
     }
     
     
@@ -4035,8 +3981,6 @@ textarea:focus::placeholder {
     }
     
     #testimonials-down {
-        /* display: flex; */
-        /* align-items: center; */
         justify-content: center;
     }
     
@@ -4049,12 +3993,8 @@ textarea:focus::placeholder {
     }
     
     .testimonials #row {
-        /* align-items: center; */
-        /* justify-content: space-around; */
         width: 100%;
         text-align: center;
-        /* margin: 0; */
-        /* padding: 0; */
     }
     
     #testimonials-profile-ico {
@@ -4077,16 +4017,12 @@ textarea:focus::placeholder {
     }
     
     #rating-stars h6 {
-        /* color: #000000; */
         font-size: 0.8rem;
     }
     
     #review p {
-        /* color: rgb(0, 0, 0, 0.5); */
         font-size: 0.5rem;
         font-weight: 600;
-        /* font-style: italic; */
-        /* text-align: center; */
         margin-top: 0px;
     }
     
@@ -4135,8 +4071,6 @@ textarea:focus::placeholder {
         color: #FFFFFF;
         margin: auto;
     } 
-    
-
 
     /* Footer Styling  */
     footer {
@@ -4187,7 +4121,6 @@ textarea:focus::placeholder {
 
 
     /* Mobile-Portfolio Page Styling goes here */
-
     /* Portfolio Main Styling goes here */
     .portfolio #row {
         width: 100%;
@@ -4315,9 +4248,7 @@ textarea:focus::placeholder {
     #graphDesign-left h1 {
         font-size: 200%;
         line-height: 40px;
-        /* width: 80%; */
         margin-left: auto;
-        
     }
 
     #graphDesign-left p {
@@ -4427,7 +4358,6 @@ textarea:focus::placeholder {
         width: 90%;
         font-size: 90%;
         text-align: justify;
-
     }
 
     #oServices-main-right {
@@ -4589,7 +4519,6 @@ textarea:focus::placeholder {
         border-radius: 0 0 30px 0;
         box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.8);
         margin: 0;
-        /* margin-left: -150px; */
     }
     
     .oTeam #profile1-card img { 
@@ -4641,7 +4570,6 @@ textarea:focus::placeholder {
         border-radius: 0 0 0 30px;
         box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.8);
         margin: 0;
-        /* margin-left: -65px; */
     }
     
     #profile2-left p, #profile2-left ol, #profile2-left h4 {
@@ -4821,30 +4749,19 @@ textarea:focus::placeholder {
         margin-left: 55px;
         margin-top: -35px;
         font-size: 1.5rem;
-        /* line-height: 30px; */
     }
 
     #moreInfo {
-        /* margin: 0; */
-        /* width: 65%; */
-        /* padding: 30px 50px; */
-        /* padding-left: 100px; */
         padding-top: 60px;
         margin-left: -15px;
     }
 
     #moreInfo h1 {
-        /* margin-left: auto; */
         font-size: 1.3rem;
-        /* line-height: 25px; */
     }
     
     #moreInfo p {
-        /* width: 100%; */
-        /* font-size: 1rem; */
         line-height: 22px;
-        /* margin: 10px 0px; */
-        /* margin-bottom: 30px; */
     }
 
     /* Abouts Page Styling goes here */
@@ -4876,8 +4793,6 @@ textarea:focus::placeholder {
     #round-pic-card {
         width: 300px;
         height: 300px;
-        /* margin-top: -290px; */
-        /* margin-left: 230px; */
     }
 
     #header-submenu:hover > #header-submenu-list {
@@ -4900,30 +4815,19 @@ textarea:focus::placeholder {
         margin-left: 40px;
         margin-top: -35px;
         font-size: 1.5rem;
-        /* line-height: 30px; */
     }
 
     #moreInfo {
-        /* margin: 0; */
-        /* width: 65%; */
-        /* padding: 30px 50px; */
-        /* padding-left: 100px; */
         padding-top: 60px;
         margin-left: -15px;
     }
 
     #moreInfo h1 {
-        /* margin-left: auto; */
         font-size: 1.3rem;
-        /* line-height: 25px; */
     }
     
     #moreInfo p {
-        /* width: 100%; */
-        /* font-size: 1rem; */
         line-height: 22px;
-        /* margin: 10px 0px; */
-        /* margin-bottom: 30px; */
     }
 
     /* Our Team Page Styling goes here */   
@@ -4934,44 +4838,12 @@ textarea:focus::placeholder {
         margin-left: 10px;
     }
 
-    .oTeam-main {
-        /* padding: 20px 40px; */
-    }
-
     .profile1 {
-        /* padding: 20px 40px; */
         height: 430px;
-        /* position: relative; */
-        /* align-items: flex-start; */
     }
     
-    #profile1-left{
-        /* width: 40%; */
-    }
-    
-    .oTeam #profile1-card { 
-        /* position: absolute; */
-        /* top: 0; */
-        /* left: 0; */
-        /* width: 150px; */
-        /* height: 150px; */
-        /* border-radius: 0 0 30px 0; */
-        /* margin: 0; */
-        /* margin-left: -150px; */
-    }
-    
-    .oTeam #profile1-card img {
-        /* margin-left: 0px; */
-    }
-    
-    #profile1-right {
-        /* width: 60%; */
-    }
     
     #profile1-right p, #profile1-right ol, #profile1-right h4 {      
-        /* position: absolute; */
-        /* padding: 0px 40px; */
-        /* margin: 5px 0px;    */
         left: 0;
     }
 
@@ -4989,36 +4861,7 @@ textarea:focus::placeholder {
     }
     
     .profile2 {
-        /* padding: 20px 40px; */
         height: 430px;
-        /* position: relative; */
-        /* align-items: flex-start; */
-    }
-    
-    #profile2-left {
-        /* width: 60%; */
-    }
-    
-    .oTeam #profile2-card { 
-        /* position: absolute; */
-        /* top: 0; */
-        /* right: 0; */
-        /* width: 150px; */
-        /* height: 150px; */
-        /* border-radius: 0 0 0 30px; */
-        /* margin: 0; */
-        /* margin-left: -65px; */
-    }
-    
-    #profile2-left p, #profile2-left ol, #profile2-left h4 {
-        /* position: absolute;
-        padding: 0px 40px;
-        margin: 5px 0px;        
-        left: 0; */
-    }
-
-    #profile2-left p {
-        /* top: 160px; */
     }
 
     #profile2-left h4 {
@@ -5027,25 +4870,15 @@ textarea:focus::placeholder {
 
     #profile2-left ol {
         top: 380px;
-        /* left: 15px; */
     }
 
-    .oTeam #profile2-card img { 
-        /* height: 130%; */
+    .oTeam #profile2-card img {
         margin-left: 0px;
     }
-    
-    #profile2-right {
-        /* width: 25%; */
-    }
-
 
     /* Abouts Page Styling goes here */
     .oAbouts {
-        /* padding: 20px 0px; */
-        /* padding-top: 0; */
         height: 430px;
-        /* flex-direction: column; */
     }
 
     /* Contact Us Page Styling goes here */
@@ -5054,8 +4887,6 @@ textarea:focus::placeholder {
     }
 
     .contactUs form button {
-        /* font-size: 0.8rem; */
-        /* border: 2px solid #FFFFFF; */
         padding: 3px 0px;
         width: 65%;
     }
@@ -5065,8 +4896,6 @@ textarea:focus::placeholder {
     #round-pic-card {
         width: 300px;
         height: 300px;
-        /* margin-top: -290px; */
-        /* margin-left: 230px; */
     }
 
     #header-submenu-list ul {
@@ -5079,7 +4908,6 @@ textarea:focus::placeholder {
     } 
 
     .home h3 {
-        /* width: 100%; */
         padding: 0;
     } 
     
@@ -5146,30 +4974,19 @@ textarea:focus::placeholder {
         margin-left: 40px;
         margin-top: -35px;
         font-size: 1.5rem;
-        /* line-height: 30px; */
     }
 
     #moreInfo {
-        /* margin: 0; */
-        /* width: 65%; */
-        /* padding: 30px 50px; */
-        /* padding-left: 100px; */
         padding-top: 60px;
         margin-left: -15px;
     }
 
     #moreInfo h1 {
-        /* margin-left: auto; */
         font-size: 1.3rem;
-        /* line-height: 25px; */
     }
     
     #moreInfo p {
-        /* width: 100%; */
-        /* font-size: 1rem; */
         line-height: 22px;
-        /* margin: 10px 0px; */
-        /* margin-bottom: 30px; */
     }
 
     /* Our Team Page Styling goes here */   
@@ -5184,50 +5001,17 @@ textarea:focus::placeholder {
     .profile1 h3 {
         margin-left: 10px;
     }
-    
-    .oTeam-main {
-        /* padding: 20px 40px; */
-    }
 
     .profile1 {
-        /* padding: 20px 40px; */
         height: 470px;
-        /* position: relative; */
-        /* align-items: flex-start; */
     }
     
-    #profile1-left{
-        /* width: 40%; */
-    }
-    
-    .oTeam #profile1-card { 
-        /* position: absolute; */
-        /* top: 0; */
-        /* left: 0; */
-        /* width: 150px; */
-        /* height: 150px; */
-        /* border-radius: 0 0 30px 0; */
-        /* margin: 0; */
+    .oTeam #profile1-card {
         margin-left: -20px;
     }
     
-    .oTeam #profile1-card img {
-        /* margin-left: 0px; */
-    }
-    
-    #profile1-right {
-        /* width: 60%; */
-    }
-    
     #profile1-right p, #profile1-right ol, #profile1-right h4 {      
-        /* position: absolute; */
-        /* padding: 0px 40px; */
-        /* margin: 5px 0px;    */
         left: 0;
-    }
-
-    #profile1-right p {
-        /* top: 160px; */
     }
 
     #profile1-right h4 {
@@ -5240,36 +5024,12 @@ textarea:focus::placeholder {
     }
     
     .profile2 {
-        /* padding: 20px 40px; */
         height: 480px;
-        /* position: relative; */
-        /* align-items: flex-start; */
     }
     
-    #profile2-left {
-        /* width: 60%; */
-    }
-    
-    .oTeam #profile2-card { 
-        /* position: absolute; */
-        /* top: 0; */
-        /* right: 0; */
-        /* width: 150px; */
-        /* height: 150px; */
-        /* border-radius: 0 0 0 30px; */
+    .oTeam #profile2-card {
         margin: 0;
         margin-right: -30px;
-    }
-    
-    #profile2-left p, #profile2-left ol, #profile2-left h4 {
-        /* position: absolute;
-        padding: 0px 40px;
-        margin: 5px 0px;        
-        left: 0; */
-    }
-
-    #profile2-left p {
-        /* top: 160px; */
     }
 
     #profile2-left h4 {
@@ -5278,16 +5038,10 @@ textarea:focus::placeholder {
 
     #profile2-left ol {
         top: 435px;
-        /* left: 15px; */
     }
 
-    .oTeam #profile2-card img { 
-        /* height: 130%; */
+    .oTeam #profile2-card img {
         margin-left: 0px;
-    }
-    
-    #profile2-right {
-        /* width: 25%; */
     }
 
     /* Contact Us Page Styling goes here */
