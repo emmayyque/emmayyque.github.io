@@ -18,11 +18,19 @@
         <!-- Example 3D model or object -->
         <a-box 
             position="0 0 0" 
+            material="color: red;" 
+            gps-entity-place="latitude: 33.777403; longitude: 72.714712;"
+            scale="150 150 150">   
+        </a-box>
+
+        <a-box 
+            position="0 0 0" 
             material="color: green;" 
-            gps-entity-place="latitude: 33.7478668; longitude: 72.7412996;"
+            gps-entity-place="latitude: 33.747819; longitude: 72.741278;"
             scale="50 50 50">   
         </a-box>
-        
+        <!-- 33.747819, 72.741278 -->
+        <!-- 33.777403, 72.714712 -->
         <!-- Camera setup with GPS support -->
         <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
     </a-scene>
