@@ -13,11 +13,7 @@
 <body style="margin: 0; overflow: hidden;">
 
     <!-- AR scene -->
-    <a-scene 
-        vr-mode-ui="enabled: false" 
-        embedded 
-        arjs="sourceType: webcam; debugUIEnabled: false;"
-        gps-camera="simulateAltitude: false;">
+    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
         
         <!-- Example 3D model or object -->
         <a-box 
@@ -28,7 +24,7 @@
         </a-box>
         
         <!-- Camera setup with GPS support -->
-        <a-camera gps-camera rotation-reader></a-camera>
+        <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
     </a-scene>
 </body>
 </html>
